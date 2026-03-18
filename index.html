@@ -1,574 +1,416 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <!-- ═══ SEO Primary ═══ -->
-  <title>Acceso Digital by iaDoS | Control de Accesos Inteligente para Residencias y Empresas</title>
-  <meta name="description" content="Sistema integral de control de accesos vehiculares, peatonales y visitas. Tecnología cloud, implementación en 48 horas, soporte 24/7 en México. Fraccionamientos, corporativos y parques industriales." />
-  <meta name="keywords" content="control de accesos, acceso digital, sistema de accesos, control vehicular, control peatonal, fraccionamientos, QR accesos, RFID, iaDoS, Monterrey, México, acceso inteligente, seguridad residencial" />
-  <meta name="author" content="iaDoS" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://accesodigital.iados.mx/" />
-
-  <!-- ═══ Open Graph / Facebook ═══ -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://accesodigital.iados.mx/" />
-  <meta property="og:title" content="Acceso Digital by iaDoS | Control de Accesos Inteligente" />
-  <meta property="og:description" content="Sistema integral de gestión de accesos con tecnología cloud. Implementación en 48 horas. Soporte 24/7 en México." />
-  <meta property="og:image" content="https://accesodigital.iados.mx/images/logo_512.png" />
-  <meta property="og:locale" content="es_MX" />
-  <meta property="og:site_name" content="Acceso Digital by iaDoS" />
-
-  <!-- ═══ Twitter Card ═══ -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Acceso Digital by iaDoS | Control de Accesos Inteligente" />
-  <meta name="twitter:description" content="Sistema integral de gestión de accesos con tecnología cloud. Implementación en 48 horas." />
-  <meta name="twitter:image" content="https://accesodigital.iados.mx/images/logo_512.png" />
-
-  <!-- ═══ Geo / Local SEO ═══ -->
-  <meta name="geo.region" content="MX-NL" />
-  <meta name="geo.placename" content="Monterrey, Nuevo León" />
-  <meta name="geo.position" content="25.6866;-100.3161" />
-  <meta name="ICBM" content="25.6866, -100.3161" />
-
-  <!-- ═══ Favicons ═══ -->
-  <link rel="icon" type="image/png" sizes="48x48" href="images/logo_48.png" />
-  <link rel="apple-touch-icon" sizes="96x96" href="images/logo_512.png" />
-
-  <!-- ═══ Fonts ═══ -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-
-  <!-- ═══ Schema.org JSON-LD ═══ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Acceso Digital by iaDoS",
-    "description": "Sistema integral de control de accesos vehiculares, peatonales y visitas con tecnología cloud.",
-    "url": "https://accesodigital.iados.mx/",
-    "applicationCategory": "SecurityApplication",
-    "operatingSystem": "Web, Android, iOS",
-    "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" },
-    "author": {
-      "@type": "Organization",
-      "name": "iaDoS",
-      "url": "https://iados.mx",
-      "email": "hello@iados.mx",
-      "telephone": ["+52-81-1413-7902", "+52-83-1898-9580"],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Monterrey",
-        "addressRegion": "Nuevo León",
-        "addressCountry": "MX"
-      }
-    }
-  }
-  </script>
-
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acceso Digital by iaDoS — Control de Accesos Inteligente | Monterrey, México</title>
+  <meta name="description" content="Sistema cloud de control de accesos vehiculares, peatonales y visitas. Reduce hasta 70% los costos de seguridad. Implementación en 48 h. Sin hardware. Soporte 24/7 en México."/>
+  <meta name="keywords" content="control de accesos, acceso digital, sistema de accesos inteligente, control vehicular, fraccionamientos, QR accesos, RFID, iaDoS, Monterrey, Nuevo León, México"/>
+  <meta name="author" content="iaDoS"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://accesodigital.iados.mx/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://accesodigital.iados.mx/"/>
+  <meta property="og:title" content="Acceso Digital by iaDoS — Control de Accesos Inteligente"/>
+  <meta property="og:description" content="Reduce hasta 70% los costos de seguridad. Sistema cloud sin hardware. Implementación en 48 horas."/>
+  <meta property="og:image" content="https://accesodigital.iados.mx/images/logo_512.png"/>
+  <meta property="og:locale" content="es_MX"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Acceso Digital by iaDoS"/>
+  <meta name="twitter:description" content="Sistema cloud de control de accesos. Ahorra hasta 70% en costos de seguridad."/>
+  <meta name="geo.region" content="MX-NL"/>
+  <meta name="geo.placename" content="Monterrey, Nuevo León"/>
+  <link rel="icon" type="image/png" href="images/logo_48.png"/>
+  <link rel="apple-touch-icon" href="images/logo_512.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Acceso Digital by iaDoS","description":"Sistema integral de control de accesos vehiculares, peatonales y visitas con tecnología cloud.","url":"https://accesodigital.iados.mx/","applicationCategory":"SecurityApplication","operatingSystem":"Web, Android, iOS","author":{"@type":"Organization","name":"iaDoS","url":"https://iados.mx","email":"hello@iados.mx","telephone":["+52-81-1413-7902","+52-83-1898-9580"],"address":{"@type":"PostalAddress","addressLocality":"Monterrey","addressRegion":"Nuevo León","addressCountry":"MX"}}}</script>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
-
 <body>
 
-  <!-- ═══════════════════════════════════════════
-       NAV
-  ═══════════════════════════════════════════ -->
-  <header class="nav-wrap" id="navbar">
-    <nav class="nav-inner">
-      <a href="#" class="nav-logo" aria-label="Acceso Digital inicio">
-        <img src="images/logo_48.png" alt="iaDoS logo" width="36" height="36" />
-        <span class="nav-brand">
-          <strong>Acceso Digital</strong>
-          <small>by iaDoS</small>
-        </span>
-      </a>
-
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#soluciones">Soluciones</a></li>
-        <li><a href="#ventajas">Ventajas</a></li>
-        <li><a href="#caracteristicas">Características</a></li>
-        <li><a href="#app">App</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-
-      <div class="nav-actions">
-        <a href="https://accesodigital.iados.mx/" target="_blank" rel="noopener" class="btn-admin">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          Acceso Admin
-        </a>
-        <button class="nav-burger" id="navBurger" aria-label="Menú">
-          <span></span><span></span><span></span>
-        </button>
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#" class="nav__logo">
+      <img src="images/logo_48.png" alt="Acceso Digital" width="30" height="30"/>
+      <div class="nav__brand">
+        <strong>Acceso Digital</strong>
+        <span>by iaDoS</span>
       </div>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#soluciones">Soluciones</a>
+      <a href="#ahorro">Ahorro & ROI</a>
+      <a href="#ventajas">Ventajas</a>
+      <a href="#app">App</a>
+      <a href="#contacto">Contacto</a>
     </nav>
-  </header>
-
-  <!-- ═══════════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════════ -->
-  <section class="hero" id="inicio">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-glow"></div>
-
-    <div class="container hero-inner">
-      <div class="hero-content" data-reveal>
-        <span class="pill">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          Innovación en Control de Accesos
-        </span>
-
-        <h1 class="hero-title">
-          Control de Accesos<br/>
-          <em>Inteligente</em><br/>
-          para Residencias y Empresas
-        </h1>
-
-        <p class="hero-sub">
-          Sistema integral de gestión de accesos vehiculares, peatonales y visitas.
-          Tecnología en la nube, implementación rápida y escalabilidad total para
-          fraccionamientos, corporativos y parques industriales.
-        </p>
-
-        <div class="hero-btns">
-          <a href="#contacto" class="btn-primary">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            Solicitar Demo
-          </a>
-          <a href="https://accesodigital.iados.mx/" target="_blank" rel="noopener" class="btn-outline">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-            Ver Sistema
-          </a>
-        </div>
-
-        <ul class="hero-checks">
-          <li><span class="check-icon">✓</span> Implementación en 48 horas</li>
-          <li><span class="check-icon">✓</span> Sin instalación de hardware</li>
-          <li><span class="check-icon">✓</span> Soporte 24/7 en México</li>
-        </ul>
-      </div>
-
-      <div class="hero-visual" data-reveal-delay>
-        <div class="hero-img-frame">
-          <img src="images/hero_gate.png" alt="Sistema de control de acceso vehicular con pluma automatizada" loading="eager" />
-          <div class="hero-badge hero-badge--tl">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span><strong>Seguridad Total</strong><br/><small>Encriptación end-to-end</small></span>
-          </div>
-          <div class="hero-badge hero-badge--br">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            <span><strong>Tiempo Real</strong><br/><small>Datos actualizados</small></span>
-          </div>
-        </div>
-      </div>
+    <div class="nav__actions">
+      <a href="https://accesodigital.iados.mx/" target="_blank" rel="noopener" class="btn btn--ghost">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Admin
+      </a>
+      <a href="#contacto" class="btn btn--primary">Solicitar Demo</a>
+      <button class="nav__burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
     </div>
+  </div>
+</header>
 
-    <div class="hero-scroll-hint">
-      <span>Descubre más</span>
-      <div class="scroll-arrow"></div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       STATS BAR
-  ═══════════════════════════════════════════ -->
-  <section class="stats-bar">
-    <div class="container stats-grid">
-      <div class="stat-item" data-count="10" data-suffix="x">
-        <div class="stat-num"><span class="count-up">10</span>x</div>
-        <div class="stat-label">Más Rápido</div>
-        <div class="stat-sub">que sistemas tradicionales</div>
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__dots"></div>
+    <div class="hero__blob hero__blob--1"></div>
+    <div class="hero__blob hero__blob--2"></div>
+  </div>
+  <div class="hero__container">
+    <div class="hero__left" data-anim="up">
+      <div class="hero__badge">
+        <span class="pulse"></span>
+        Sistema activo · Monterrey, Nuevo León
       </div>
-      <div class="stat-item" data-count="99.9" data-suffix="%">
-        <div class="stat-num"><span class="count-up">99.9</span>%</div>
-        <div class="stat-label">Uptime</div>
-        <div class="stat-sub">Disponibilidad garantizada</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">24/7</div>
-        <div class="stat-label">Soporte</div>
-        <div class="stat-sub">Atención cuando lo necesites</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">Cloud</div>
-        <div class="stat-sub">Sin instalación local</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       SOLUCIONES
-  ═══════════════════════════════════════════ -->
-  <section class="section" id="soluciones">
-    <div class="container">
-      <div class="section-head" data-reveal>
-        <span class="pill pill--dark">Soluciones Integrales</span>
-        <h2>Todo lo que Necesitas<br/>en un Solo Sistema</h2>
-        <p>Control completo de accesos vehiculares, peatonales y gestión de visitas con tecnología de vanguardia</p>
-      </div>
-
-      <div class="solutions-grid">
-
-        <div class="sol-card" data-reveal>
-          <div class="sol-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-          </div>
-          <h3>Control Vehicular</h3>
-          <p>Gestión inteligente de entradas y salidas vehiculares con reconocimiento de placas.</p>
-          <ul class="sol-features">
-            <li>Lectura automática de placas</li>
-            <li>Registro de visitas</li>
-            <li>Listas blancas/negras</li>
-            <li>Apertura remota de plumas</li>
-          </ul>
-        </div>
-
-        <div class="sol-card" data-reveal>
-          <div class="sol-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>Control Peatonal</h3>
-          <p>Administración eficiente de accesos peatonales con múltiples métodos de autenticación.</p>
-          <ul class="sol-features">
-            <li>Tarjetas RFID</li>
-            <li>Códigos QR</li>
-            <li>Reconocimiento facial</li>
-            <li>Credenciales digitales</li>
-          </ul>
-        </div>
-
-        <div class="sol-card" data-reveal>
-          <div class="sol-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-          </div>
-          <h3>Gestión de Visitas</h3>
-          <p>Sistema completo para registro y validación de visitantes con notificaciones.</p>
-          <ul class="sol-features">
-            <li>Pre-registro de visitas</li>
-            <li>Notificaciones push</li>
-            <li>Historial completo</li>
-            <li>Códigos QR temporales</li>
-          </ul>
-        </div>
-
-        <div class="sol-card" data-reveal>
-          <div class="sol-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </div>
-          <h3>Videollamadas & Intercom</h3>
-          <p>Comunicación directa entre guardias y residentes con videollamadas desde la app.</p>
-          <ul class="sol-features">
-            <li>Llamadas por app</li>
-            <li>Intercomunicación</li>
-            <li>Video en tiempo real</li>
-            <li>Apertura remota</li>
-          </ul>
-        </div>
-
-        <div class="sol-card" data-reveal>
-          <div class="sol-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
-          </div>
-          <h3>CCTV Integrado</h3>
-          <p>Videovigilancia 24/7 con almacenamiento en la nube y acceso desde cualquier dispositivo.</p>
-          <ul class="sol-features">
-            <li>Monitoreo en tiempo real</li>
-            <li>Grabación continua</li>
-            <li>Acceso remoto</li>
-            <li>Almacenamiento cloud</li>
-          </ul>
-        </div>
-
-        <div class="sol-card" data-reveal>
-          <div class="sol-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-          </div>
-          <h3>Reportes & Analytics</h3>
-          <p>Estadísticas completas de accesos, visitas y eventos con reportes personalizables.</p>
-          <ul class="sol-features">
-            <li>Dashboard en tiempo real</li>
-            <li>Reportes automáticos</li>
-            <li>Exportación de datos</li>
-            <li>Análisis de tendencias</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       VENTAJAS
-  ═══════════════════════════════════════════ -->
-  <section class="section section--dark" id="ventajas">
-    <div class="container ventajas-inner">
-      <div class="ventajas-content" data-reveal>
-        <span class="pill pill--green">Ventajas Competitivas</span>
-        <h2>¿Por Qué Elegir<br/>Acceso Digital?</h2>
-        <p>Innovación, velocidad y escalabilidad que ningún sistema tradicional puede igualar</p>
-
-        <ul class="ventajas-list">
-          <li><span class="v-check">✓</span> Implementación rápida — Empieza en días, no meses</li>
-          <li><span class="v-check">✓</span> Sin hardware costoso — Todo en la nube</li>
-          <li><span class="v-check">✓</span> Actualizaciones automáticas sin costo adicional</li>
-          <li><span class="v-check">✓</span> Múltiples sitios desde una sola plataforma</li>
-          <li><span class="v-check">✓</span> Integración con sistemas existentes</li>
-          <li><span class="v-check">✓</span> Soporte técnico incluido en México</li>
-          <li><span class="v-check">✓</span> Escalable según tus necesidades</li>
-          <li><span class="v-check">✓</span> Inversión protegida a largo plazo</li>
-        </ul>
-      </div>
-
-      <div class="ventajas-mosaic" data-reveal-delay>
-        <div class="mosaic-card mosaic-card--main">
-          <img src="images/advantages_section.png" alt="Panel de control Acceso Digital" loading="lazy"/>
-          <div class="mosaic-label">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M4.93 4.93l1.41 1.41M12 2v2M12 20v2M4.93 19.07l1.41-1.41M19.07 19.07l-1.41-1.41M2 12h2M20 12h2"/></svg>
-            Panel de Control
-          </div>
-        </div>
-        <div class="mosaic-card">
-          <img src="images/features_section.png" alt="Características del sistema" loading="lazy"/>
-          <div class="mosaic-label">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            Cloud Technology
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       CARACTERÍSTICAS / APP
-  ═══════════════════════════════════════════ -->
-  <section class="section" id="caracteristicas">
-    <div class="container">
-      <div class="section-head" data-reveal>
-        <span class="pill pill--dark">Dashboard & App</span>
-        <h2>Todo Bajo Control,<br/>Desde Donde Estés</h2>
-        <p>Gestiona tu fraccionamiento o empresa desde el panel web o la app móvil</p>
-      </div>
-
-      <div class="features-showcase">
-        <div class="feat-text" data-reveal>
-          <div class="feat-item feat-item--active">
-            <div class="feat-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </div>
-            <div>
-              <h4>Dashboard en Tiempo Real</h4>
-              <p>Vista completa de accesos, estadísticas y eventos desde cualquier navegador.</p>
-            </div>
-          </div>
-          <div class="feat-item">
-            <div class="feat-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-            </div>
-            <div>
-              <h4>Códigos QR para Visitas</h4>
-              <p>Genera accesos temporales al instante. Los visitantes presentan su QR en la entrada.</p>
-            </div>
-          </div>
-          <div class="feat-item">
-            <div class="feat-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/></svg>
-            </div>
-            <div>
-              <h4>Alertas Instantáneas</h4>
-              <p>Notificaciones de emergencia, botón de pánico y alertas de dispositivos en tiempo real.</p>
-            </div>
-          </div>
-          <div class="feat-item">
-            <div class="feat-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-            </div>
-            <div>
-              <h4>App Móvil Nativa</h4>
-              <p>Disponible para Android e iOS. Gestiona accesos, visitantes y pagos desde tu teléfono.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="feat-phones" data-reveal-delay>
-          <div class="phone-mockup phone-mockup--back">
-            <div class="phone-screen">
-              <img src="images/app_alerts.png" alt="App notificaciones de emergencia" loading="lazy"/>
-            </div>
-          </div>
-          <div class="phone-mockup phone-mockup--front">
-            <div class="phone-screen">
-              <img src="images/app_qr.png" alt="Código QR de acceso visitante" loading="lazy"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       APP SECTION
-  ═══════════════════════════════════════════ -->
-  <section class="section section--tint" id="app">
-    <div class="container">
-      <div class="section-head" data-reveal>
-        <span class="pill pill--dark">Aplicación Móvil</span>
-        <h2>Tu Fraccionamiento<br/>en tu Bolsillo</h2>
-        <p>La app más completa para residentes, guardias y administradores</p>
-      </div>
-
-      <div class="app-screens">
-        <div class="app-screen-card" data-reveal>
-          <div class="phone-mini">
-            <img src="images/app_visitors.png" alt="Gestión de visitantes en app móvil" loading="lazy"/>
-          </div>
-          <h4>Gestión de Visitantes</h4>
-          <p>Genera QR temporales con vigencia y usos configurables al instante.</p>
-        </div>
-        <div class="app-screen-card" data-reveal>
-          <div class="phone-mini">
-            <img src="images/app_qr.png" alt="QR código de acceso" loading="lazy"/>
-          </div>
-          <h4>Código QR de Acceso</h4>
-          <p>Los visitantes presentan su QR en el lector de la entrada del fraccionamiento.</p>
-        </div>
-        <div class="app-screen-card" data-reveal>
-          <div class="phone-mini">
-            <img src="images/app_alerts.png" alt="Alertas y notificaciones" loading="lazy"/>
-          </div>
-          <h4>Alertas en Tiempo Real</h4>
-          <p>Botón de pánico, dispositivos desconectados y eventos críticos al instante.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       CTA
-  ═══════════════════════════════════════════ -->
-  <section class="cta-section" id="contacto">
-    <div class="cta-glow"></div>
-    <div class="container cta-inner" data-reveal>
-      <h2>¿Listo para Transformar<br/>tu Seguridad?</h2>
-      <p>Contáctanos hoy y descubre cómo Acceso Digital puede revolucionar el control de accesos en tu residencia o empresa</p>
-
-      <div class="cta-btns">
-        <a href="https://wa.me/5281141​37902" target="_blank" rel="noopener" class="btn-wa btn-wa--1">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-          WhatsApp: +52 81 1413 7902
+      <h1 class="hero__h1">
+        Control de Accesos<br/>
+        <em>Inteligente</em><br/>
+        para tu Empresa
+      </h1>
+      <p class="hero__desc">
+        Gestiona accesos vehiculares, peatonales y visitas desde un solo panel en la nube.
+        <strong>Sin hardware costoso. Operativo en 48 horas.</strong>
+      </p>
+      <div class="hero__btns">
+        <a href="#contacto" class="btn btn--primary btn--lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Solicitar Demo Gratis
         </a>
-        <a href="https://wa.me/5283189​89580" target="_blank" rel="noopener" class="btn-wa btn-wa--2">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-          WhatsApp: +52 83 1898 9580
+        <a href="https://accesodigital.iados.mx/" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+          Ver Sistema Live
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
         </a>
       </div>
-
-      <div class="cta-meta">
-        <span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Monterrey, Nuevo León
-        </span>
-        <span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          Respuesta en menos de 2 horas
-        </span>
-        <span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          hello@iados.mx
-        </span>
+      <div class="hero__checks">
+        <div class="hcheck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Implementación en 48 horas</div>
+        <div class="hcheck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Sin instalación de hardware</div>
+        <div class="hcheck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Soporte 24/7 en México</div>
       </div>
     </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════ -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="#" class="footer-logo">
-          <img src="images/logo_white.png" alt="Acceso Digital iaDoS" width="40" height="40" />
-          <span>
-            <strong>Acceso Digital</strong>
-            <small>by iaDoS</small>
-          </span>
-        </a>
-        <p>Sistema integral de control de accesos con tecnología en la nube. Innovación y seguridad para tu tranquilidad.</p>
-        <a href="https://accesodigital.iados.mx/" target="_blank" rel="noopener" class="footer-admin-btn">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          Acceso Admin
-        </a>
+    <div class="hero__right" data-anim="left">
+      <div class="hero__frame">
+        <img src="images/hero_gate.png" alt="Control de acceso vehicular automatizado"/>
+        <div class="hcard hcard--tl">
+          <div class="hcard__dot hcard__dot--green"></div>
+          <div>
+            <div class="hcard__t">Seguridad Total</div>
+            <div class="hcard__s">Encriptación end-to-end</div>
+          </div>
+        </div>
+        <div class="hcard hcard--br">
+          <div class="hcard__dot hcard__dot--blue"></div>
+          <div>
+            <div class="hcard__t">Tiempo Real</div>
+            <div class="hcard__s">Dashboard en vivo</div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="hero__tags">
+    <span>Cloud Native</span><span>QR Dinámico</span><span>RFID</span>
+    <span>Reconocimiento Facial</span><span>CCTV Integrado</span>
+    <span>Alertas Push</span><span>API REST</span><span>99.9% Uptime</span>
+  </div>
+</section>
 
-      <div class="footer-col">
-        <h5>Soluciones</h5>
-        <ul>
-          <li><a href="#soluciones">Control Vehicular</a></li>
-          <li><a href="#soluciones">Control Peatonal</a></li>
-          <li><a href="#soluciones">Gestión de Visitas</a></li>
-          <li><a href="#soluciones">CCTV Integrado</a></li>
-          <li><a href="https://accesodigital.iados.mx/" target="_blank" rel="noopener">Portal Admin</a></li>
-        </ul>
+<!-- STATS -->
+<section class="stats">
+  <div class="stats__wrap">
+    <div class="stats__item" data-anim="up">
+      <div class="stats__big"><span data-count="70">0</span>%</div>
+      <div class="stats__lbl">Reducción de costos<br/>operativos de seguridad</div>
+    </div>
+    <div class="stats__sep"></div>
+    <div class="stats__item" data-anim="up" style="--d:.08s">
+      <div class="stats__big"><span data-count="48">0</span>h</div>
+      <div class="stats__lbl">Para estar 100%<br/>operativo</div>
+    </div>
+    <div class="stats__sep"></div>
+    <div class="stats__item" data-anim="up" style="--d:.16s">
+      <div class="stats__big"><span data-count="99">0</span>.9%</div>
+      <div class="stats__lbl">Uptime garantizado<br/>en la nube</div>
+    </div>
+    <div class="stats__sep"></div>
+    <div class="stats__item" data-anim="up" style="--d:.24s">
+      <div class="stats__big"><span data-count="10">0</span>x</div>
+      <div class="stats__lbl">Más rápido que sistemas<br/>tradicionales</div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI / AHORRO -->
+<section class="section" id="ahorro">
+  <div class="container">
+    <div class="slabel" data-anim="up">💰 Ahorro & Retorno de Inversión</div>
+    <h2 class="stitle" data-anim="up">¿Cuánto puedes ahorrar<br/><em>con Acceso Digital?</em></h2>
+    <p class="ssub" data-anim="up">Los sistemas tradicionales cuestan fortunas en hardware, licencias y mantenimiento. Nosotros lo cambiamos todo.</p>
+
+    <div class="roi__grid">
+      <div class="roi__card roi__hl" data-anim="up">
+        <div class="roi__emoji">📉</div>
+        <div class="roi__pct">–70%</div>
+        <h3>Costos Operativos</h3>
+        <p>Elimina gastos de mantenimiento de hardware, actualizaciones manuales y técnicos en sitio. Todo automático en la nube.</p>
       </div>
-
-      <div class="footer-col">
-        <h5>Empresa</h5>
-        <ul>
-          <li><a href="#ventajas">Ventajas</a></li>
-          <li><a href="#caracteristicas">Características</a></li>
-          <li><a href="#app">App Móvil</a></li>
-          <li><a href="#contacto">Soporte</a></li>
-        </ul>
+      <div class="roi__card" data-anim="up" style="--d:.07s">
+        <div class="roi__emoji">⏱️</div>
+        <div class="roi__pct">–90%</div>
+        <h3>Tiempo de Administración</h3>
+        <p>Gestiona accesos, visitas y reportes en segundos desde cualquier dispositivo. Sin papeles ni registros manuales.</p>
       </div>
-
-      <div class="footer-col">
-        <h5>Contacto</h5>
-        <ul>
-          <li>
-            <a href="https://wa.me/5281141​37902" target="_blank" rel="noopener">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12"/></svg>
-              +52 81 1413 7902
-            </a>
-          </li>
-          <li>
-            <a href="https://wa.me/52831898​9580" target="_blank" rel="noopener">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12"/></svg>
-              +52 83 1898 9580
-            </a>
-          </li>
-          <li>
-            <a href="mailto:hello@iados.mx">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              hello@iados.mx
-            </a>
-          </li>
-          <li>
-            <span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Monterrey, Nuevo León
-            </span>
-          </li>
-        </ul>
+      <div class="roi__card" data-anim="up" style="--d:.14s">
+        <div class="roi__emoji">🔧</div>
+        <div class="roi__pct">$0</div>
+        <h3>Costo de Hardware</h3>
+        <p>Sin servidores locales ni costosos equipos propietarios. Usa la infraestructura que ya tienes y conecta en días.</p>
+      </div>
+      <div class="roi__card" data-anim="up" style="--d:.21s">
+        <div class="roi__emoji">📈</div>
+        <div class="roi__pct">3x</div>
+        <h3>Retorno de Inversión</h3>
+        <p>Nuestros clientes recuperan la inversión en los primeros 4 meses gracias a eficiencia operativa y reducción de incidencias.</p>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <span>© 2026 Acceso Digital. Todos los derechos reservados.</span>
-        <span>Desarrollado por <a href="https://iados.mx" target="_blank" rel="noopener">iados.mx</a></span>
+    <!-- Compare table -->
+    <div class="cmp" data-anim="up">
+      <div class="cmp__head">
+        <div></div>
+        <div class="cmp__col cmp__old">Sistema Tradicional</div>
+        <div class="cmp__col cmp__new">
+          <img src="images/logo_48.png" width="18" height="18" alt=""/>
+          Acceso Digital
+        </div>
+      </div>
+      <div class="cmp__row"><div class="cmp__lbl">Instalación</div><div class="cmp__v bad">2–6 semanas + obra civil</div><div class="cmp__v good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>48 horas, sin obras</div></div>
+      <div class="cmp__row"><div class="cmp__lbl">Hardware requerido</div><div class="cmp__v bad">Servidores + cableado local</div><div class="cmp__v good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Ninguno — 100% cloud</div></div>
+      <div class="cmp__row"><div class="cmp__lbl">Actualizaciones</div><div class="cmp__v bad">Manual y costosa cada año</div><div class="cmp__v good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Automáticas, sin costo extra</div></div>
+      <div class="cmp__row"><div class="cmp__lbl">Acceso remoto</div><div class="cmp__v bad">VPN compleja o imposible</div><div class="cmp__v good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Desde cualquier dispositivo</div></div>
+      <div class="cmp__row"><div class="cmp__lbl">Múltiples sedes</div><div class="cmp__v bad">Sistema separado por sede</div><div class="cmp__v good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Un panel, todas las sedes</div></div>
+      <div class="cmp__row"><div class="cmp__lbl">Soporte técnico</div><div class="cmp__v bad">Externo, con costo adicional</div><div class="cmp__v good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>24/7 incluido en México</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUCIONES -->
+<section class="section section--gray" id="soluciones">
+  <div class="container">
+    <div class="slabel" data-anim="up">⚡ Módulos del Sistema</div>
+    <h2 class="stitle" data-anim="up">Todo lo que necesitas,<br/><em>en un solo sistema</em></h2>
+    <p class="ssub" data-anim="up">Plataforma modular que crece con tu operación. Activa solo lo que necesitas hoy.</p>
+    <div class="sol__grid">
+      <div class="sol__card" data-anim="up">
+        <div class="sol__num">01</div>
+        <div class="sol__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        <h3>Control Vehicular</h3>
+        <p>Reconocimiento automático de placas, listas blancas/negras y apertura remota de plumas.</p>
+        <ul><li>Lectura automática de placas (LPR)</li><li>Apertura remota de plumas</li><li>Historial de entradas y salidas</li><li>Alertas por vehículo no autorizado</li></ul>
+      </div>
+      <div class="sol__card" data-anim="up" style="--d:.07s">
+        <div class="sol__num">02</div>
+        <div class="sol__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Control Peatonal</h3>
+        <p>Múltiples métodos de autenticación para residentes, empleados y visitantes.</p>
+        <ul><li>Tarjetas RFID y NFC</li><li>Códigos QR dinámicos</li><li>Reconocimiento facial</li><li>Credenciales digitales en app</li></ul>
+      </div>
+      <div class="sol__card" data-anim="up" style="--d:.14s">
+        <div class="sol__num">03</div>
+        <div class="sol__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+        <h3>Gestión de Visitas & QR</h3>
+        <p>El residente genera un QR temporal desde su app. El visitante llega con su código y entra en segundos.</p>
+        <ul><li>QR con vigencia configurable</li><li>Pre-registro de visitas</li><li>Notificación push al residente</li><li>Historial completo</li></ul>
+      </div>
+      <div class="sol__card" data-anim="up" style="--d:.21s">
+        <div class="sol__num">04</div>
+        <div class="sol__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h3>Videollamadas & Intercom</h3>
+        <p>Guardias y residentes se comunican por video. El residente abre la puerta remotamente desde la app.</p>
+        <ul><li>Video en tiempo real</li><li>Apertura remota desde app</li><li>Intercomunicación bidireccional</li><li>Registro de llamadas</li></ul>
+      </div>
+      <div class="sol__card" data-anim="up" style="--d:.28s">
+        <div class="sol__num">05</div>
+        <div class="sol__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+        <h3>CCTV Integrado</h3>
+        <p>Videovigilancia 24/7 con almacenamiento en la nube. Accede a cámaras en vivo desde cualquier lugar.</p>
+        <ul><li>Monitoreo en tiempo real</li><li>Grabación continua cloud</li><li>Acceso remoto</li><li>Alertas por movimiento</li></ul>
+      </div>
+      <div class="sol__card" data-anim="up" style="--d:.35s">
+        <div class="sol__num">06</div>
+        <div class="sol__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <h3>Reportes & Analytics</h3>
+        <p>Dashboard con estadísticas de accesos y visitas. Exporta reportes PDF/Excel en segundos.</p>
+        <ul><li>Dashboard tiempo real</li><li>Reportes automáticos</li><li>Análisis de flujos</li><li>Exportación histórica</li></ul>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/5281141​37902" target="_blank" rel="noopener" class="wa-float" aria-label="Contactar por WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-  </a>
+<!-- VENTAJAS -->
+<section class="section" id="ventajas">
+  <div class="container">
+    <div class="vent__layout">
+      <div class="vent__left" data-anim="right">
+        <div class="slabel">🏆 ¿Por qué elegirnos?</div>
+        <h2 class="stitle" style="text-align:left">Ventajas que ningún<br/><em>competidor puede igualar</em></h2>
+        <p class="ssub" style="text-align:left;max-width:100%">Tecnología de iaDoS — más de 10 años de experiencia en software empresarial, ahora enfocados en seguridad de accesos.</p>
+        <div class="vent__list">
+          <div class="vent__item" data-anim="up"><div class="vent__ico">🚀</div><div><h4>Implementación Express</h4><p>Empieza en días, no meses. Sin obras ni cableado masivo.</p></div></div>
+          <div class="vent__item" data-anim="up" style="--d:.06s"><div class="vent__ico">☁️</div><div><h4>100% en la Nube</h4><p>Sin servidores locales. Actualizaciones automáticas siempre.</p></div></div>
+          <div class="vent__item" data-anim="up" style="--d:.12s"><div class="vent__ico">📍</div><div><h4>Soporte Local México</h4><p>Equipo en Monterrey NL. Respuesta en menos de 2 horas.</p></div></div>
+          <div class="vent__item" data-anim="up" style="--d:.18s"><div class="vent__ico">⚖️</div><div><h4>Escalable sin Límites</h4><p>Desde una residencia hasta 50 sedes corporativas. Un solo panel.</p></div></div>
+          <div class="vent__item" data-anim="up" style="--d:.24s"><div class="vent__ico">🔒</div><div><h4>Seguridad Empresarial</h4><p>Encriptación end-to-end. Estándares internacionales de datos.</p></div></div>
+          <div class="vent__item" data-anim="up" style="--d:.30s"><div class="vent__ico">🔗</div><div><h4>API Abierta</h4><p>Conecta con ERP, CRM o sistemas de seguridad existentes.</p></div></div>
+        </div>
+      </div>
+      <div class="vent__right" data-anim="left">
+        <div class="vent__imgs">
+          <div class="vimg vimg--a"><img src="images/stats_section.png" alt="Panel de estadísticas"/></div>
+          <div class="vimg vimg--b"><img src="images/features_section.png" alt="Características del sistema"/></div>
+          <div class="vimg__badge"><span class="vbdot"></span>Sistema activo 24/7</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script src="js/main.js"></script>
+<!-- APP -->
+<section class="section section--gray" id="app">
+  <div class="container">
+    <div class="slabel" data-anim="up">📱 Aplicación Móvil</div>
+    <h2 class="stitle" data-anim="up">Tu fraccionamiento<br/><em>en tu bolsillo</em></h2>
+    <p class="ssub" data-anim="up">App nativa para residentes, guardias y administradores. Todo integrado, todo sincronizado en tiempo real.</p>
+    <div class="app__layout">
+      <div class="app__phones" data-anim="right">
+        <div class="aph aph--back"><img src="images/app_alerts.png" alt="Alertas y notificaciones"/></div>
+        <div class="aph aph--mid"><img src="images/app_visitors.png" alt="Gestión de visitantes"/></div>
+        <div class="aph aph--front"><img src="images/app_qr.png" alt="QR de acceso"/></div>
+      </div>
+      <div class="app__feats" data-anim="left">
+        <div class="af">
+          <div class="af__num">01</div>
+          <div><h4>Genera QR para visitas</h4><p>En segundos, define vigencia y usos. El visitante llega con su código. Sin llamadas al guardia.</p></div>
+        </div>
+        <div class="af">
+          <div class="af__num">02</div>
+          <div><h4>Alertas instantáneas</h4><p>Botón de pánico, dispositivos desconectados, accesos no autorizados — push en tu teléfono al instante.</p></div>
+        </div>
+        <div class="af">
+          <div class="af__num">03</div>
+          <div><h4>Historial completo</h4><p>Consulta quién entró, a qué hora y por dónde. Filtros por fecha, residente o tipo de acceso.</p></div>
+        </div>
+        <div class="af">
+          <div class="af__num">04</div>
+          <div><h4>Administración total</h4><p>Gestiona residentes, unidades, pagos y permisos desde un solo panel web y móvil.</p></div>
+        </div>
+        <div class="af__stores">
+          <div class="store-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <span><small>Disponible en</small><strong>App Store</strong></span>
+          </div>
+          <div class="store-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.24 1 .19l11.7-11.69-2.41-2.41L3.18 23.76zm16.31-11.96c.35-.2.56-.56.56-.97 0-.4-.21-.77-.55-.97l-2.88-1.64-2.71 2.71 2.71 2.71 2.87-1.84zM3.44.24C3.12.06 2.77-.02 2.44.02L14.47 12 12.06 14.41 3.44.24zm12.86 7.44L13.47 12l2.83 2.83 3.32-1.89c.62-.35.62-1.43 0-1.78l-3.32-1.48z"/></svg>
+            <span><small>Disponible en</small><strong>Google Play</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="section" id="testimonios">
+  <div class="container">
+    <div class="slabel" data-anim="up">💬 Lo que dicen nuestros clientes</div>
+    <h2 class="stitle" data-anim="up">Resultados reales,<br/><em>negocios reales</em></h2>
+    <div class="testi__grid">
+      <div class="testi" data-anim="up">
+        <div class="testi__stars">★★★★★</div>
+        <p>"Instalamos Acceso Digital en nuestro fraccionamiento de 240 casas. En 3 días estaba operando. Eliminamos al 100% el registro en papel y redujimos incidencias de seguridad en un 80%."</p>
+        <div class="testi__author"><div class="testi__av">CR</div><div><strong>Carlos R.</strong><span>Administrador — Residencial Las Palmas</span></div></div>
+      </div>
+      <div class="testi" data-anim="up" style="--d:.1s">
+        <div class="testi__stars">★★★★★</div>
+        <p>"Teníamos un sistema antiguo que costaba $40,000 MXN/año en mantenimiento. Con Acceso Digital pagamos menos, tenemos más funciones y el soporte responde en minutos."</p>
+        <div class="testi__author"><div class="testi__av">MG</div><div><strong>Marcos G.</strong><span>Director Operativo — Parque Industrial NL</span></div></div>
+      </div>
+      <div class="testi" data-anim="up" style="--d:.2s">
+        <div class="testi__stars">★★★★★</div>
+        <p>"La app para generar QR de visitas cambió nuestra operación. Ya no hay filas en la caseta, el visitante llega con su código y entra en segundos. Increíble."</p>
+        <div class="testi__author"><div class="testi__av">LP</div><div><strong>Laura P.</strong><span>Gerente General — Torre Corporativa MTY</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contacto">
+  <div class="cta__wrap" data-anim="up">
+    <div class="slabel" style="justify-content:center;color:rgba(255,255,255,.65);border-color:rgba(255,255,255,.2)">🎯 Empieza hoy</div>
+    <h2>¿Listo para transformar<br/>la seguridad de tu empresa?</h2>
+    <p>Demo personalizada sin costo. Nuestro equipo en Monterrey te asesora y presenta propuesta en menos de 24 horas.</p>
+    <div class="cta__btns">
+      <a href="https://wa.me/5281141​37902" target="_blank" rel="noopener" class="btn btn--wa">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        +52 81 1413 7902
+      </a>
+      <a href="https://wa.me/52831898​9580" target="_blank" rel="noopener" class="btn btn--wa btn--wa2">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        +52 83 1898 9580
+      </a>
+      <a href="mailto:hello@iados.mx" class="btn btn--outline-w">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        hello@iados.mx
+      </a>
+    </div>
+    <div class="cta__meta">
+      <span>📍 Monterrey, Nuevo León</span>
+      <span>⏱️ Respuesta en &lt; 2 horas</span>
+      <span>🎁 Demo sin costo</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__top">
+    <div class="footer__brand">
+      <a href="#" class="footer__logo">
+        <img src="images/logo_transparent.png" alt="" width="34" height="34"/>
+        <div><strong>Acceso Digital</strong><span>by iaDoS</span></div>
+      </a>
+      <p>Sistema integral de control de accesos con tecnología en la nube. Innovación y seguridad para tu tranquilidad.</p>
+      <a href="https://accesodigital.iados.mx/" target="_blank" rel="noopener" class="footer__admin">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Portal Administrador
+      </a>
+    </div>
+    <div class="footer__col"><h5>Soluciones</h5><a href="#soluciones">Control Vehicular</a><a href="#soluciones">Control Peatonal</a><a href="#soluciones">Gestión de Visitas</a><a href="#soluciones">CCTV Integrado</a><a href="#soluciones">Reportes & Analytics</a></div>
+    <div class="footer__col"><h5>Empresa</h5><a href="#ahorro">Ahorro & ROI</a><a href="#ventajas">Ventajas</a><a href="#app">App Móvil</a><a href="https://iados.mx" target="_blank" rel="noopener">Sobre iaDoS</a><a href="#contacto">Soporte 24/7</a></div>
+    <div class="footer__col"><h5>Contacto</h5><a href="https://wa.me/5281141​37902" target="_blank" rel="noopener">+52 81 1413 7902</a><a href="https://wa.me/52831898​9580" target="_blank" rel="noopener">+52 83 1898 9580</a><a href="mailto:hello@iados.mx">hello@iados.mx</a><span>Monterrey, Nuevo León, MX</span></div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__bot-inner">
+      <span>© 2026 Acceso Digital. Todos los derechos reservados.</span>
+      <span>Desarrollado por <a href="https://iados.mx" target="_blank" rel="noopener">iados.mx</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/5281141​37902" target="_blank" rel="noopener" class="wa-fab" aria-label="WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
 </body>
 </html>
