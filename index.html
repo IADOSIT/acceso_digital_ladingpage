@@ -16,363 +16,508 @@
   <meta property="og:image" content="https://accesodigital.iados.mx/images/logo_512.png"/>
   <meta property="og:locale" content="es_MX"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Acceso Digital by iaDoS"/>
-  <meta name="twitter:description" content="Sistema cloud de control de accesos. Ahorra hasta 70% en costos de seguridad."/>
   <meta name="geo.region" content="MX-NL"/>
   <meta name="geo.placename" content="Monterrey, Nuevo León"/>
-  <link rel="icon" type="image/png" href="images/logo_48.png"/>
-  <link rel="apple-touch-icon" href="images/logo_512.png"/>
+  <link rel="icon" type="image/png" href="images/logo_96.png"/>
+  <link rel="apple-touch-icon" href="images/logo_96.png"/>
+
+  <!-- Geist — la tipografía que usan Vercel / Linear / productos tech top tier -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Acceso Digital by iaDoS","description":"Sistema integral de control de accesos vehiculares, peatonales y visitas con tecnología cloud.","url":"https://accesodigital.iados.mx/","applicationCategory":"SecurityApplication","operatingSystem":"Web, Android, iOS","author":{"@type":"Organization","name":"iaDoS","url":"https://iados.mx","email":"hello@iados.mx","telephone":["+52-81-1413-7902","+52-83-1898-9580"],"address":{"@type":"PostalAddress","addressLocality":"Monterrey","addressRegion":"Nuevo León","addressCountry":"MX"}}}</script>
+
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-<!-- NAV -->
-<header class="nav" id="nav">
-  <div class="nav__inner">
-    <a href="#" class="nav__logo">
-      <img src="images/logo_48.png" alt="Acceso Digital" width="30" height="30"/>
-      <div class="nav__brand">
-        <strong>Acceso Digital</strong>
-        <span>by iaDoS</span>
+<!-- ═══════════════ NAV ═══════════════ -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#" class="navbar-logo">
+      <img src="images/logo_transparent.png" alt="Acceso Digital iaDoS"/>
+      <div class="navbar-brand">
+        <span class="navbar-name">Acceso Digital</span>
+        <span class="navbar-sub">by iaDoS</span>
       </div>
     </a>
-    <nav class="nav__links" id="navLinks">
+
+    <nav class="navbar-nav" id="navLinks">
       <a href="#soluciones">Soluciones</a>
-      <a href="#ahorro">Ahorro & ROI</a>
       <a href="#ventajas">Ventajas</a>
-      <a href="#app">App</a>
+      <a href="#caracteristicas">Características</a>
       <a href="#contacto">Contacto</a>
     </nav>
-    <div class="nav__actions">
-      <a href="https://accesodigital.iados.mx/" target="_blank" rel="noopener" class="btn btn--ghost">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        Admin
+
+    <div class="navbar-actions">
+      <a href="https://accesodigital.iados.mx/" target="_blank" rel="noopener" class="btn-admin">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Acceso Admin
       </a>
-      <a href="#contacto" class="btn btn--primary">Solicitar Demo</a>
-      <button class="nav__burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
+      <button class="burger" id="burger"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
-<!-- HERO -->
+<!-- ═══════════════ HERO ═══════════════ -->
 <section class="hero" id="inicio">
-  <div class="hero__bg" aria-hidden="true">
-    <div class="hero__dots"></div>
-    <div class="hero__blob hero__blob--1"></div>
-    <div class="hero__blob hero__blob--2"></div>
-  </div>
-  <div class="hero__container">
-    <div class="hero__left" data-anim="up">
-      <div class="hero__badge">
-        <span class="pulse"></span>
-        Sistema activo · Monterrey, Nuevo León
+  <div class="container hero-grid">
+
+    <!-- LEFT -->
+    <div class="hero-left">
+      <div class="hero-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        Innovación en Control de Accesos
       </div>
-      <h1 class="hero__h1">
+
+      <h1 class="hero-title">
         Control de Accesos<br/>
-        <em>Inteligente</em><br/>
-        para tu Empresa
+        <span class="hero-accent">Inteligente</span><br/>
+        para Residencias y Empresas
       </h1>
-      <p class="hero__desc">
-        Gestiona accesos vehiculares, peatonales y visitas desde un solo panel en la nube.
-        <strong>Sin hardware costoso. Operativo en 48 horas.</strong>
+
+      <p class="hero-desc">
+        Sistema integral de gestión de accesos vehiculares, peatonales y visitas. Tecnología en la nube, implementación rápida y escalabilidad total para fraccionamientos, corporativos y parques industriales.
       </p>
-      <div class="hero__btns">
-        <a href="#contacto" class="btn btn--primary btn--lg">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          Solicitar Demo Gratis
-        </a>
-        <a href="https://accesodigital.iados.mx/" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
-          Ver Sistema Live
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-        </a>
-      </div>
-      <div class="hero__checks">
-        <div class="hcheck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Implementación en 48 horas</div>
-        <div class="hcheck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Sin instalación de hardware</div>
-        <div class="hcheck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Soporte 24/7 en México</div>
-      </div>
-    </div>
-    <div class="hero__right" data-anim="left">
-      <div class="hero__frame">
-        <img src="images/hero_gate.png" alt="Control de acceso vehicular automatizado"/>
-        <div class="hcard hcard--tl">
-          <div class="hcard__dot hcard__dot--green"></div>
-          <div>
-            <div class="hcard__t">Seguridad Total</div>
-            <div class="hcard__s">Encriptación end-to-end</div>
-          </div>
-        </div>
-        <div class="hcard hcard--br">
-          <div class="hcard__dot hcard__dot--blue"></div>
-          <div>
-            <div class="hcard__t">Tiempo Real</div>
-            <div class="hcard__s">Dashboard en vivo</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="hero__tags">
-    <span>Cloud Native</span><span>QR Dinámico</span><span>RFID</span>
-    <span>Reconocimiento Facial</span><span>CCTV Integrado</span>
-    <span>Alertas Push</span><span>API REST</span><span>99.9% Uptime</span>
-  </div>
-</section>
 
-<!-- STATS -->
-<section class="stats">
-  <div class="stats__wrap">
-    <div class="stats__item" data-anim="up">
-      <div class="stats__big"><span data-count="70">0</span>%</div>
-      <div class="stats__lbl">Reducción de costos<br/>operativos de seguridad</div>
+      <div class="hero-buttons">
+        <a href="#contacto" class="btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Solicitar Demo
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+        <a href="https://accesodigital.iados.mx/" target="_blank" rel="noopener" class="btn-secondary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Ver Sistema
+        </a>
+      </div>
+
+      <ul class="hero-checks">
+        <li>
+          <span class="check-circle"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+          Implementación en 48 horas
+        </li>
+        <li>
+          <span class="check-circle"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+          Sin instalación de hardware
+        </li>
+        <li>
+          <span class="check-circle"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+          Soporte 24/7 en México
+        </li>
+      </ul>
     </div>
-    <div class="stats__sep"></div>
-    <div class="stats__item" data-anim="up" style="--d:.08s">
-      <div class="stats__big"><span data-count="48">0</span>h</div>
-      <div class="stats__lbl">Para estar 100%<br/>operativo</div>
-    </div>
-    <div class="stats__sep"></div>
-    <div class="stats__item" data-anim="up" style="--d:.16s">
-      <div class="stats__big"><span data-count="99">0</span>.9%</div>
-      <div class="stats__lbl">Uptime garantizado<br/>en la nube</div>
-    </div>
-    <div class="stats__sep"></div>
-    <div class="stats__item" data-anim="up" style="--d:.24s">
-      <div class="stats__big"><span data-count="10">0</span>x</div>
-      <div class="stats__lbl">Más rápido que sistemas<br/>tradicionales</div>
+
+    <!-- RIGHT -->
+    <div class="hero-right">
+      <div class="hero-img-wrap">
+        <img src="images/hero_gate.png" alt="Sistema de control de acceso vehicular"/>
+
+        <div class="hero-chip hero-chip--tl">
+          <div class="chip-icon chip-icon--green">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="chip-text">
+            <strong>Seguridad Total</strong>
+            <span>Encriptación end-to-end</span>
+          </div>
+        </div>
+
+        <div class="hero-chip hero-chip--br">
+          <div class="chip-icon chip-icon--blue">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <div class="chip-text">
+            <strong>Tiempo Real</strong>
+            <span>Datos actualizados</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ROI / AHORRO -->
-<section class="section" id="ahorro">
+<!-- ═══════════════ LOGOS STRIP ═══════════════ -->
+<div class="strip">
+  <div class="container strip-inner">
+    <span class="strip-label">Tecnología que impulsa el sistema</span>
+    <div class="strip-tags">
+      <span>Cloud Native</span>
+      <span>QR Dinámico</span>
+      <span>RFID / NFC</span>
+      <span>Reconocimiento Facial</span>
+      <span>CCTV Integrado</span>
+      <span>Alertas Push</span>
+      <span>API REST</span>
+      <span>99.9% Uptime</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ STATS ═══════════════ -->
+<section class="stats-section">
+  <div class="container stats-grid">
+    <div class="stat-card">
+      <div class="stat-number green"><span data-count="70">0</span>%</div>
+      <div class="stat-title">Reducción de costos</div>
+      <div class="stat-sub">operativos de seguridad</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number"><span data-count="48">0</span>h</div>
+      <div class="stat-title">Implementación</div>
+      <div class="stat-sub">para estar 100% operativo</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number"><span data-count="99">0</span>.9%</div>
+      <div class="stat-title">Uptime garantizado</div>
+      <div class="stat-sub">disponibilidad en la nube</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number"><span data-count="10">0</span>x</div>
+      <div class="stat-title">Más rápido</div>
+      <div class="stat-sub">que sistemas tradicionales</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ AHORRO / ROI ═══════════════ -->
+<section class="section bg-light" id="ahorro">
   <div class="container">
-    <div class="slabel" data-anim="up">💰 Ahorro & Retorno de Inversión</div>
-    <h2 class="stitle" data-anim="up">¿Cuánto puedes ahorrar<br/><em>con Acceso Digital?</em></h2>
-    <p class="ssub" data-anim="up">Los sistemas tradicionales cuestan fortunas en hardware, licencias y mantenimiento. Nosotros lo cambiamos todo.</p>
+    <div class="section-head">
+      <div class="section-badge">💰 Ahorro & Retorno de Inversión</div>
+      <h2 class="section-title">¿Cuánto puedes ahorrar<br/><span class="green">con Acceso Digital?</span></h2>
+      <p class="section-desc">Los sistemas tradicionales cuestan fortunas en hardware, licencias y mantenimiento anual. Nosotros lo cambiamos todo.</p>
+    </div>
 
-    <div class="roi__grid">
-      <div class="roi__card roi__hl" data-anim="up">
-        <div class="roi__emoji">📉</div>
-        <div class="roi__pct">–70%</div>
+    <div class="roi-grid">
+      <div class="roi-card roi-card--hl reveal">
+        <div class="roi-emoji">📉</div>
+        <div class="roi-big">–70%</div>
         <h3>Costos Operativos</h3>
         <p>Elimina gastos de mantenimiento de hardware, actualizaciones manuales y técnicos en sitio. Todo automático en la nube.</p>
       </div>
-      <div class="roi__card" data-anim="up" style="--d:.07s">
-        <div class="roi__emoji">⏱️</div>
-        <div class="roi__pct">–90%</div>
+      <div class="roi-card reveal" style="--d:.07s">
+        <div class="roi-emoji">⏱️</div>
+        <div class="roi-big">–90%</div>
         <h3>Tiempo de Administración</h3>
         <p>Gestiona accesos, visitas y reportes en segundos desde cualquier dispositivo. Sin papeles ni registros manuales.</p>
       </div>
-      <div class="roi__card" data-anim="up" style="--d:.14s">
-        <div class="roi__emoji">🔧</div>
-        <div class="roi__pct">$0</div>
+      <div class="roi-card reveal" style="--d:.14s">
+        <div class="roi-emoji">🔧</div>
+        <div class="roi-big">$0</div>
         <h3>Costo de Hardware</h3>
-        <p>Sin servidores locales ni costosos equipos propietarios. Usa la infraestructura que ya tienes y conecta en días.</p>
+        <p>Sin servidores locales ni costosos equipos propietarios. Conecta con la infraestructura que ya tienes.</p>
       </div>
-      <div class="roi__card" data-anim="up" style="--d:.21s">
-        <div class="roi__emoji">📈</div>
-        <div class="roi__pct">3x</div>
+      <div class="roi-card reveal" style="--d:.21s">
+        <div class="roi-emoji">📈</div>
+        <div class="roi-big">3x ROI</div>
         <h3>Retorno de Inversión</h3>
         <p>Nuestros clientes recuperan la inversión en los primeros 4 meses gracias a eficiencia operativa y reducción de incidencias.</p>
       </div>
     </div>
 
-    <!-- Compare table -->
-    <div class="cmp" data-anim="up">
-      <div class="cmp__head">
-        <div></div>
-        <div class="cmp__col cmp__old">Sistema Tradicional</div>
-        <div class="cmp__col cmp__new">
-          <img src="images/logo_48.png" width="18" height="18" alt=""/>
+    <!-- Tabla comparativa -->
+    <div class="compare-table reveal">
+      <div class="compare-head">
+        <div class="compare-col-label"></div>
+        <div class="compare-col compare-col--old">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          Sistema Tradicional
+        </div>
+        <div class="compare-col compare-col--new">
+          <img src="images/logo_transparent.png" width="18" alt=""/>
           Acceso Digital
         </div>
       </div>
-      <div class="cmp__row"><div class="cmp__lbl">Instalación</div><div class="cmp__v bad">2–6 semanas + obra civil</div><div class="cmp__v good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>48 horas, sin obras</div></div>
-      <div class="cmp__row"><div class="cmp__lbl">Hardware requerido</div><div class="cmp__v bad">Servidores + cableado local</div><div class="cmp__v good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Ninguno — 100% cloud</div></div>
-      <div class="cmp__row"><div class="cmp__lbl">Actualizaciones</div><div class="cmp__v bad">Manual y costosa cada año</div><div class="cmp__v good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Automáticas, sin costo extra</div></div>
-      <div class="cmp__row"><div class="cmp__lbl">Acceso remoto</div><div class="cmp__v bad">VPN compleja o imposible</div><div class="cmp__v good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Desde cualquier dispositivo</div></div>
-      <div class="cmp__row"><div class="cmp__lbl">Múltiples sedes</div><div class="cmp__v bad">Sistema separado por sede</div><div class="cmp__v good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Un panel, todas las sedes</div></div>
-      <div class="cmp__row"><div class="cmp__lbl">Soporte técnico</div><div class="cmp__v bad">Externo, con costo adicional</div><div class="cmp__v good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>24/7 incluido en México</div></div>
+      <div class="compare-row">
+        <div class="compare-label">Instalación</div>
+        <div class="compare-val bad">2–6 semanas + obra civil</div>
+        <div class="compare-val good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>48 horas, sin obras</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label">Hardware requerido</div>
+        <div class="compare-val bad">Servidores + cableado local</div>
+        <div class="compare-val good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Ninguno — 100% cloud</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label">Actualizaciones</div>
+        <div class="compare-val bad">Manual, costosa cada año</div>
+        <div class="compare-val good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Automáticas, sin costo extra</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label">Acceso remoto</div>
+        <div class="compare-val bad">VPN compleja o imposible</div>
+        <div class="compare-val good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Desde cualquier dispositivo</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label">Múltiples sedes</div>
+        <div class="compare-val bad">Sistema separado por sede</div>
+        <div class="compare-val good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Un panel, todas las sedes</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label">Soporte técnico</div>
+        <div class="compare-val bad">Externo, con costo adicional</div>
+        <div class="compare-val good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>24/7 incluido en México</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SOLUCIONES -->
-<section class="section section--gray" id="soluciones">
+<!-- ═══════════════ SOLUCIONES ═══════════════ -->
+<section class="section" id="soluciones">
   <div class="container">
-    <div class="slabel" data-anim="up">⚡ Módulos del Sistema</div>
-    <h2 class="stitle" data-anim="up">Todo lo que necesitas,<br/><em>en un solo sistema</em></h2>
-    <p class="ssub" data-anim="up">Plataforma modular que crece con tu operación. Activa solo lo que necesitas hoy.</p>
-    <div class="sol__grid">
-      <div class="sol__card" data-anim="up">
-        <div class="sol__num">01</div>
-        <div class="sol__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+    <div class="section-head">
+      <div class="section-badge">⚡ Soluciones Integrales</div>
+      <h2 class="section-title">Todo lo que necesitas,<br/><span class="green">en un solo sistema</span></h2>
+      <p class="section-desc">Plataforma modular que crece con tu operación. Activa solo lo que necesitas hoy.</p>
+    </div>
+    <div class="solutions-grid">
+
+      <div class="sol-card reveal">
+        <div class="sol-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <span class="sol-num">01</span>
         <h3>Control Vehicular</h3>
-        <p>Reconocimiento automático de placas, listas blancas/negras y apertura remota de plumas.</p>
-        <ul><li>Lectura automática de placas (LPR)</li><li>Apertura remota de plumas</li><li>Historial de entradas y salidas</li><li>Alertas por vehículo no autorizado</li></ul>
+        <p>Reconocimiento automático de placas, listas blancas/negras y apertura remota de plumas desde cualquier dispositivo.</p>
+        <ul>
+          <li>Lectura automática de placas (LPR)</li>
+          <li>Apertura remota de plumas</li>
+          <li>Historial de entradas y salidas</li>
+          <li>Alertas por vehículo no autorizado</li>
+        </ul>
       </div>
-      <div class="sol__card" data-anim="up" style="--d:.07s">
-        <div class="sol__num">02</div>
-        <div class="sol__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+
+      <div class="sol-card reveal" style="--d:.07s">
+        <div class="sol-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <span class="sol-num">02</span>
         <h3>Control Peatonal</h3>
-        <p>Múltiples métodos de autenticación para residentes, empleados y visitantes.</p>
-        <ul><li>Tarjetas RFID y NFC</li><li>Códigos QR dinámicos</li><li>Reconocimiento facial</li><li>Credenciales digitales en app</li></ul>
+        <p>Múltiples métodos de autenticación para residentes, empleados y visitantes con registro automático.</p>
+        <ul>
+          <li>Tarjetas RFID y NFC</li>
+          <li>Códigos QR dinámicos</li>
+          <li>Reconocimiento facial</li>
+          <li>Credenciales digitales en app</li>
+        </ul>
       </div>
-      <div class="sol__card" data-anim="up" style="--d:.14s">
-        <div class="sol__num">03</div>
-        <div class="sol__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+
+      <div class="sol-card reveal" style="--d:.14s">
+        <div class="sol-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        </div>
+        <span class="sol-num">03</span>
         <h3>Gestión de Visitas & QR</h3>
         <p>El residente genera un QR temporal desde su app. El visitante llega con su código y entra en segundos.</p>
-        <ul><li>QR con vigencia configurable</li><li>Pre-registro de visitas</li><li>Notificación push al residente</li><li>Historial completo</li></ul>
+        <ul>
+          <li>QR con vigencia configurable</li>
+          <li>Pre-registro de visitas</li>
+          <li>Notificación push al residente</li>
+          <li>Historial completo</li>
+        </ul>
       </div>
-      <div class="sol__card" data-anim="up" style="--d:.21s">
-        <div class="sol__num">04</div>
-        <div class="sol__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+
+      <div class="sol-card reveal" style="--d:.21s">
+        <div class="sol-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <span class="sol-num">04</span>
         <h3>Videollamadas & Intercom</h3>
         <p>Guardias y residentes se comunican por video. El residente abre la puerta remotamente desde la app.</p>
-        <ul><li>Video en tiempo real</li><li>Apertura remota desde app</li><li>Intercomunicación bidireccional</li><li>Registro de llamadas</li></ul>
+        <ul>
+          <li>Video en tiempo real</li>
+          <li>Apertura remota desde app</li>
+          <li>Intercomunicación bidireccional</li>
+          <li>Registro de llamadas</li>
+        </ul>
       </div>
-      <div class="sol__card" data-anim="up" style="--d:.28s">
-        <div class="sol__num">05</div>
-        <div class="sol__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+
+      <div class="sol-card reveal" style="--d:.28s">
+        <div class="sol-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        </div>
+        <span class="sol-num">05</span>
         <h3>CCTV Integrado</h3>
         <p>Videovigilancia 24/7 con almacenamiento en la nube. Accede a cámaras en vivo desde cualquier lugar.</p>
-        <ul><li>Monitoreo en tiempo real</li><li>Grabación continua cloud</li><li>Acceso remoto</li><li>Alertas por movimiento</li></ul>
+        <ul>
+          <li>Monitoreo en tiempo real</li>
+          <li>Grabación continua cloud</li>
+          <li>Acceso remoto</li>
+          <li>Alertas por movimiento</li>
+        </ul>
       </div>
-      <div class="sol__card" data-anim="up" style="--d:.35s">
-        <div class="sol__num">06</div>
-        <div class="sol__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+
+      <div class="sol-card reveal" style="--d:.35s">
+        <div class="sol-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <span class="sol-num">06</span>
         <h3>Reportes & Analytics</h3>
         <p>Dashboard con estadísticas de accesos y visitas. Exporta reportes PDF/Excel en segundos.</p>
-        <ul><li>Dashboard tiempo real</li><li>Reportes automáticos</li><li>Análisis de flujos</li><li>Exportación histórica</li></ul>
+        <ul>
+          <li>Dashboard tiempo real</li>
+          <li>Reportes automáticos</li>
+          <li>Análisis de flujos</li>
+          <li>Exportación histórica</li>
+        </ul>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- VENTAJAS -->
-<section class="section" id="ventajas">
+<!-- ═══════════════ VENTAJAS ═══════════════ -->
+<section class="section bg-light" id="ventajas">
   <div class="container">
-    <div class="vent__layout">
-      <div class="vent__left" data-anim="right">
-        <div class="slabel">🏆 ¿Por qué elegirnos?</div>
-        <h2 class="stitle" style="text-align:left">Ventajas que ningún<br/><em>competidor puede igualar</em></h2>
-        <p class="ssub" style="text-align:left;max-width:100%">Tecnología de iaDoS — más de 10 años de experiencia en software empresarial, ahora enfocados en seguridad de accesos.</p>
-        <div class="vent__list">
-          <div class="vent__item" data-anim="up"><div class="vent__ico">🚀</div><div><h4>Implementación Express</h4><p>Empieza en días, no meses. Sin obras ni cableado masivo.</p></div></div>
-          <div class="vent__item" data-anim="up" style="--d:.06s"><div class="vent__ico">☁️</div><div><h4>100% en la Nube</h4><p>Sin servidores locales. Actualizaciones automáticas siempre.</p></div></div>
-          <div class="vent__item" data-anim="up" style="--d:.12s"><div class="vent__ico">📍</div><div><h4>Soporte Local México</h4><p>Equipo en Monterrey NL. Respuesta en menos de 2 horas.</p></div></div>
-          <div class="vent__item" data-anim="up" style="--d:.18s"><div class="vent__ico">⚖️</div><div><h4>Escalable sin Límites</h4><p>Desde una residencia hasta 50 sedes corporativas. Un solo panel.</p></div></div>
-          <div class="vent__item" data-anim="up" style="--d:.24s"><div class="vent__ico">🔒</div><div><h4>Seguridad Empresarial</h4><p>Encriptación end-to-end. Estándares internacionales de datos.</p></div></div>
-          <div class="vent__item" data-anim="up" style="--d:.30s"><div class="vent__ico">🔗</div><div><h4>API Abierta</h4><p>Conecta con ERP, CRM o sistemas de seguridad existentes.</p></div></div>
-        </div>
-      </div>
-      <div class="vent__right" data-anim="left">
-        <div class="vent__imgs">
-          <div class="vimg vimg--a"><img src="images/stats_section.png" alt="Panel de estadísticas"/></div>
-          <div class="vimg vimg--b"><img src="images/features_section.png" alt="Características del sistema"/></div>
-          <div class="vimg__badge"><span class="vbdot"></span>Sistema activo 24/7</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- APP -->
-<section class="section section--gray" id="app">
-  <div class="container">
-    <div class="slabel" data-anim="up">📱 Aplicación Móvil</div>
-    <h2 class="stitle" data-anim="up">Tu fraccionamiento<br/><em>en tu bolsillo</em></h2>
-    <p class="ssub" data-anim="up">App nativa para residentes, guardias y administradores. Todo integrado, todo sincronizado en tiempo real.</p>
-    <div class="app__layout">
-      <div class="app__phones" data-anim="right">
-        <div class="aph aph--back"><img src="images/app_alerts.png" alt="Alertas y notificaciones"/></div>
-        <div class="aph aph--mid"><img src="images/app_visitors.png" alt="Gestión de visitantes"/></div>
-        <div class="aph aph--front"><img src="images/app_qr.png" alt="QR de acceso"/></div>
-      </div>
-      <div class="app__feats" data-anim="left">
-        <div class="af">
-          <div class="af__num">01</div>
-          <div><h4>Genera QR para visitas</h4><p>En segundos, define vigencia y usos. El visitante llega con su código. Sin llamadas al guardia.</p></div>
-        </div>
-        <div class="af">
-          <div class="af__num">02</div>
-          <div><h4>Alertas instantáneas</h4><p>Botón de pánico, dispositivos desconectados, accesos no autorizados — push en tu teléfono al instante.</p></div>
-        </div>
-        <div class="af">
-          <div class="af__num">03</div>
-          <div><h4>Historial completo</h4><p>Consulta quién entró, a qué hora y por dónde. Filtros por fecha, residente o tipo de acceso.</p></div>
-        </div>
-        <div class="af">
-          <div class="af__num">04</div>
-          <div><h4>Administración total</h4><p>Gestiona residentes, unidades, pagos y permisos desde un solo panel web y móvil.</p></div>
-        </div>
-        <div class="af__stores">
-          <div class="store-btn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            <span><small>Disponible en</small><strong>App Store</strong></span>
+    <div class="ventajas-layout">
+      <div class="ventajas-left reveal-right">
+        <div class="section-badge" style="display:inline-flex">🏆 Ventajas Competitivas</div>
+        <h2 class="section-title" style="text-align:left">¿Por Qué Elegir<br/><span class="green">Acceso Digital?</span></h2>
+        <p class="section-desc" style="text-align:left;max-width:100%">Innovación, velocidad y escalabilidad que ningún sistema tradicional puede igualar. Tecnología de iaDoS — más de 10 años en software empresarial.</p>
+        <div class="vent-list">
+          <div class="vent-item">
+            <span class="vent-check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Implementación Express</strong><br/><span>Empieza en días, no meses. Sin obras ni cableado masivo.</span></div>
           </div>
-          <div class="store-btn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.24 1 .19l11.7-11.69-2.41-2.41L3.18 23.76zm16.31-11.96c.35-.2.56-.56.56-.97 0-.4-.21-.77-.55-.97l-2.88-1.64-2.71 2.71 2.71 2.71 2.87-1.84zM3.44.24C3.12.06 2.77-.02 2.44.02L14.47 12 12.06 14.41 3.44.24zm12.86 7.44L13.47 12l2.83 2.83 3.32-1.89c.62-.35.62-1.43 0-1.78l-3.32-1.48z"/></svg>
-            <span><small>Disponible en</small><strong>Google Play</strong></span>
+          <div class="vent-item">
+            <span class="vent-check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>100% en la Nube</strong><br/><span>Sin servidores locales. Actualizaciones automáticas siempre.</span></div>
+          </div>
+          <div class="vent-item">
+            <span class="vent-check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Soporte Local en México</strong><br/><span>Equipo en Monterrey, NL. Respuesta en menos de 2 horas.</span></div>
+          </div>
+          <div class="vent-item">
+            <span class="vent-check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Escalable sin Límites</strong><br/><span>Desde una residencia hasta 50 sedes corporativas. Un solo panel.</span></div>
+          </div>
+          <div class="vent-item">
+            <span class="vent-check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Seguridad Empresarial</strong><br/><span>Encriptación end-to-end. Estándares internacionales.</span></div>
+          </div>
+          <div class="vent-item">
+            <span class="vent-check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>API Abierta</strong><br/><span>Conecta con ERP, CRM o sistemas de seguridad existentes.</span></div>
+          </div>
+          <div class="vent-item">
+            <span class="vent-check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Actualizaciones Automáticas</strong><br/><span>Sin costo adicional. Siempre la última versión disponible.</span></div>
+          </div>
+          <div class="vent-item">
+            <span class="vent-check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Inversión Protegida</strong><br/><span>Modelo SaaS sin riesgo de obsolescencia de hardware.</span></div>
           </div>
         </div>
       </div>
+      <div class="ventajas-right reveal-left">
+        <div class="vent-imgs">
+          <img class="vimg-main" src="images/advantages_section.png" alt="Panel de control Acceso Digital"/>
+          <img class="vimg-over" src="images/stats_section.png" alt="Estadísticas en tiempo real"/>
+          <div class="vimg-live"><span class="live-dot"></span> Sistema activo 24/7</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIOS -->
-<section class="section" id="testimonios">
+<!-- ═══════════════ FEATURES / DASHBOARD ═══════════════ -->
+<section class="section" id="caracteristicas">
   <div class="container">
-    <div class="slabel" data-anim="up">💬 Lo que dicen nuestros clientes</div>
-    <h2 class="stitle" data-anim="up">Resultados reales,<br/><em>negocios reales</em></h2>
-    <div class="testi__grid">
-      <div class="testi" data-anim="up">
-        <div class="testi__stars">★★★★★</div>
+    <div class="section-head">
+      <div class="section-badge">📊 Dashboard & App</div>
+      <h2 class="section-title">Dashboard en Tiempo Real,<br/><span class="green">Códigos QR, Alertas Instantáneas</span></h2>
+      <p class="section-desc">Control total desde el panel web o la app móvil. Gestiona, monitorea y actúa desde cualquier dispositivo.</p>
+    </div>
+    <div class="features-row">
+      <div class="feat-card reveal">
+        <div class="feat-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Dashboard en Tiempo Real</h3>
+        <p>Vista completa de accesos, estadísticas y eventos desde cualquier navegador, sin instalar nada.</p>
+      </div>
+      <div class="feat-card reveal" style="--d:.1s">
+        <div class="feat-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        </div>
+        <h3>Códigos QR para Visitas</h3>
+        <p>Genera accesos temporales al instante con vigencia y usos configurables. El visitante presenta el QR en la entrada.</p>
+      </div>
+      <div class="feat-card reveal" style="--d:.2s">
+        <div class="feat-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/></svg>
+        </div>
+        <h3>Alertas Instantáneas</h3>
+        <p>Botón de pánico, dispositivos desconectados y accesos no autorizados — notificación push al instante.</p>
+      </div>
+    </div>
+    <div class="features-screens reveal">
+      <img src="images/app_visitors.png" alt="App gestión de visitantes" class="screen-img"/>
+      <img src="images/app_qr.png" alt="QR de acceso" class="screen-img screen-img--center"/>
+      <img src="images/app_alerts.png" alt="Alertas y notificaciones" class="screen-img"/>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ TESTIMONIOS ═══════════════ -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-badge">💬 Clientes que confían en nosotros</div>
+      <h2 class="section-title">Resultados reales,<br/><span class="green">negocios reales</span></h2>
+    </div>
+    <div class="testimonios-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
         <p>"Instalamos Acceso Digital en nuestro fraccionamiento de 240 casas. En 3 días estaba operando. Eliminamos al 100% el registro en papel y redujimos incidencias de seguridad en un 80%."</p>
-        <div class="testi__author"><div class="testi__av">CR</div><div><strong>Carlos R.</strong><span>Administrador — Residencial Las Palmas</span></div></div>
+        <div class="testi-author">
+          <div class="testi-avatar">CR</div>
+          <div><strong>Carlos R.</strong><span>Administrador — Residencial Las Palmas</span></div>
+        </div>
       </div>
-      <div class="testi" data-anim="up" style="--d:.1s">
-        <div class="testi__stars">★★★★★</div>
-        <p>"Teníamos un sistema antiguo que costaba $40,000 MXN/año en mantenimiento. Con Acceso Digital pagamos menos, tenemos más funciones y el soporte responde en minutos."</p>
-        <div class="testi__author"><div class="testi__av">MG</div><div><strong>Marcos G.</strong><span>Director Operativo — Parque Industrial NL</span></div></div>
+      <div class="testi-card reveal" style="--d:.1s">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Teníamos un sistema antiguo que costaba $40,000 MXN/año solo en mantenimiento. Con Acceso Digital pagamos menos, tenemos más funciones y el soporte responde en minutos."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MG</div>
+          <div><strong>Marcos G.</strong><span>Director Operativo — Parque Industrial NL</span></div>
+        </div>
       </div>
-      <div class="testi" data-anim="up" style="--d:.2s">
-        <div class="testi__stars">★★★★★</div>
-        <p>"La app para generar QR de visitas cambió nuestra operación. Ya no hay filas en la caseta, el visitante llega con su código y entra en segundos. Increíble."</p>
-        <div class="testi__author"><div class="testi__av">LP</div><div><strong>Laura P.</strong><span>Gerente General — Torre Corporativa MTY</span></div></div>
+      <div class="testi-card reveal" style="--d:.2s">
+        <div class="testi-stars">★★★★★</div>
+        <p>"La app para generar QR de visitas cambió nuestra operación. Ya no hay filas en la caseta, el visitante llega con su código y entra en segundos. Increíble nivel de servicio."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">LP</div>
+          <div><strong>Laura P.</strong><span>Gerente General — Torre Corporativa MTY</span></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta" id="contacto">
-  <div class="cta__wrap" data-anim="up">
-    <div class="slabel" style="justify-content:center;color:rgba(255,255,255,.65);border-color:rgba(255,255,255,.2)">🎯 Empieza hoy</div>
+<!-- ═══════════════ CTA ═══════════════ -->
+<section class="cta-section" id="contacto">
+  <div class="container cta-inner reveal">
+    <div class="section-badge" style="border-color:rgba(74,222,128,.3);background:rgba(74,222,128,.08);color:#4ade80;justify-content:center">🎯 Empieza hoy mismo</div>
     <h2>¿Listo para transformar<br/>la seguridad de tu empresa?</h2>
     <p>Demo personalizada sin costo. Nuestro equipo en Monterrey te asesora y presenta propuesta en menos de 24 horas.</p>
-    <div class="cta__btns">
-      <a href="https://wa.me/5281141​37902" target="_blank" rel="noopener" class="btn btn--wa">
-        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    <div class="cta-buttons">
+      <a href="https://wa.me/5281141​37902" target="_blank" rel="noopener" class="btn-wa">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
         +52 81 1413 7902
       </a>
-      <a href="https://wa.me/52831898​9580" target="_blank" rel="noopener" class="btn btn--wa btn--wa2">
-        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+      <a href="https://wa.me/52831898​9580" target="_blank" rel="noopener" class="btn-wa btn-wa--ghost">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
         +52 83 1898 9580
       </a>
-      <a href="mailto:hello@iados.mx" class="btn btn--outline-w">
+      <a href="mailto:hello@iados.mx" class="btn-mail">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         hello@iados.mx
       </a>
     </div>
-    <div class="cta__meta">
+    <div class="cta-meta">
       <span>📍 Monterrey, Nuevo León</span>
       <span>⏱️ Respuesta en &lt; 2 horas</span>
       <span>🎁 Demo sin costo</span>
@@ -380,33 +525,55 @@
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ═══════════════ FOOTER ═══════════════ -->
 <footer class="footer">
-  <div class="container footer__top">
-    <div class="footer__brand">
-      <a href="#" class="footer__logo">
-        <img src="images/logo_transparent.png" alt="" width="34" height="34"/>
-        <div><strong>Acceso Digital</strong><span>by iaDoS</span></div>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="footer-logo">
+        <img src="images/logo_white.png" alt="Acceso Digital" width="36" height="36"/>
+        <div>
+          <strong>Acceso Digital</strong>
+          <span>by iaDoS</span>
+        </div>
       </a>
       <p>Sistema integral de control de accesos con tecnología en la nube. Innovación y seguridad para tu tranquilidad.</p>
-      <a href="https://accesodigital.iados.mx/" target="_blank" rel="noopener" class="footer__admin">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      <a href="https://accesodigital.iados.mx/" target="_blank" rel="noopener" class="footer-admin-btn">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         Portal Administrador
       </a>
     </div>
-    <div class="footer__col"><h5>Soluciones</h5><a href="#soluciones">Control Vehicular</a><a href="#soluciones">Control Peatonal</a><a href="#soluciones">Gestión de Visitas</a><a href="#soluciones">CCTV Integrado</a><a href="#soluciones">Reportes & Analytics</a></div>
-    <div class="footer__col"><h5>Empresa</h5><a href="#ahorro">Ahorro & ROI</a><a href="#ventajas">Ventajas</a><a href="#app">App Móvil</a><a href="https://iados.mx" target="_blank" rel="noopener">Sobre iaDoS</a><a href="#contacto">Soporte 24/7</a></div>
-    <div class="footer__col"><h5>Contacto</h5><a href="https://wa.me/5281141​37902" target="_blank" rel="noopener">+52 81 1413 7902</a><a href="https://wa.me/52831898​9580" target="_blank" rel="noopener">+52 83 1898 9580</a><a href="mailto:hello@iados.mx">hello@iados.mx</a><span>Monterrey, Nuevo León, MX</span></div>
+    <div class="footer-col">
+      <h5>Soluciones</h5>
+      <a href="#soluciones">Control Vehicular</a>
+      <a href="#soluciones">Control Peatonal</a>
+      <a href="#soluciones">Gestión de Visitas</a>
+      <a href="#soluciones">CCTV Integrado</a>
+      <a href="#soluciones">Reportes & Analytics</a>
+    </div>
+    <div class="footer-col">
+      <h5>Empresa</h5>
+      <a href="#ahorro">Ahorro & ROI</a>
+      <a href="#ventajas">Ventajas</a>
+      <a href="#caracteristicas">App Móvil</a>
+      <a href="https://iados.mx" target="_blank" rel="noopener">Sobre iaDoS</a>
+      <a href="#contacto">Soporte 24/7</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contacto</h5>
+      <a href="https://wa.me/5281141​37902" target="_blank" rel="noopener">+52 81 1413 7902</a>
+      <a href="https://wa.me/52831898​9580" target="_blank" rel="noopener">+52 83 1898 9580</a>
+      <a href="mailto:hello@iados.mx">hello@iados.mx</a>
+      <span>Monterrey, Nuevo León, MX</span>
+    </div>
   </div>
-  <div class="footer__bottom">
-    <div class="container footer__bot-inner">
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
       <span>© 2026 Acceso Digital. Todos los derechos reservados.</span>
       <span>Desarrollado por <a href="https://iados.mx" target="_blank" rel="noopener">iados.mx</a></span>
     </div>
   </div>
 </footer>
 
-<!-- Floating WhatsApp -->
 <a href="https://wa.me/5281141​37902" target="_blank" rel="noopener" class="wa-fab" aria-label="WhatsApp">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
 </a>
