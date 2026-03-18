@@ -9,3 +9,9 @@ services:
     volumes:
       - .:/usr/share/nginx/html
     restart: always
+    networks:
+      - web_network # Une el servicio a la red del proxy
+
+networks:
+  web_network:
+    external: true # Indica que la red ya existe y no debe crearla de nuevo
