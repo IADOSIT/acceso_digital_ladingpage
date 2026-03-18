@@ -217,48 +217,69 @@
       </div>
     </div>
 
-    <!-- Tabla comparativa -->
+    <!-- Integration banner -->
+    <div class="integration-banner reveal">
+      <div class="int-badge">🔌 Integración sin fricción</div>
+      <div class="int-content">
+        <h3>Nos integramos a tu sistema actual de accesos</h3>
+        <p>Aprovecha al máximo la infraestructura que ya tienes. Sin inversión extra en hardware, sin cambiar lo que funciona — solo agregamos inteligencia, visibilidad y control total desde la nube.</p>
+      </div>
+      <div class="int-icons">
+        <div class="int-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><span>Plumas existentes</span></div>
+        <div class="int-arrow">→</div>
+        <div class="int-icon int-icon--center"><img src="images/logo_app.png" width="32" height="32" alt=""/></div>
+        <div class="int-arrow">→</div>
+        <div class="int-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg><span>Control total</span></div>
+      </div>
+    </div>
+
+    <!-- Tabla comparativa rediseñada -->
     <div class="compare-table reveal">
       <div class="compare-head">
-        <div class="compare-col-label"></div>
+        <div></div>
         <div class="compare-col compare-col--old">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
           Sistema Tradicional
         </div>
         <div class="compare-col compare-col--new">
-          <img src="images/logo_transparent.png" width="18" alt=""/>
+          <img src="images/logo_app.png" width="18" height="18" alt=""/>
           Acceso Digital
         </div>
       </div>
       <div class="compare-row">
-        <div class="compare-label">Instalación</div>
+        <div class="compare-label"><span class="cl-icon">⚡</span>Instalación</div>
         <div class="compare-val bad">2–6 semanas + obra civil</div>
         <div class="compare-val good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>48 horas, sin obras</div>
       </div>
       <div class="compare-row">
-        <div class="compare-label">Hardware requerido</div>
+        <div class="compare-label"><span class="cl-icon">🖥️</span>Hardware requerido</div>
         <div class="compare-val bad">Servidores + cableado local</div>
         <div class="compare-val good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Ninguno — 100% cloud</div>
       </div>
       <div class="compare-row">
-        <div class="compare-label">Actualizaciones</div>
+        <div class="compare-label"><span class="cl-icon">🔄</span>Actualizaciones</div>
         <div class="compare-val bad">Manual, costosa cada año</div>
         <div class="compare-val good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Automáticas, sin costo extra</div>
       </div>
       <div class="compare-row">
-        <div class="compare-label">Acceso remoto</div>
+        <div class="compare-label"><span class="cl-icon">📱</span>Acceso remoto</div>
         <div class="compare-val bad">VPN compleja o imposible</div>
         <div class="compare-val good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Desde cualquier dispositivo</div>
       </div>
       <div class="compare-row">
-        <div class="compare-label">Múltiples sedes</div>
+        <div class="compare-label"><span class="cl-icon">🏢</span>Múltiples sedes</div>
         <div class="compare-val bad">Sistema separado por sede</div>
         <div class="compare-val good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Un panel, todas las sedes</div>
       </div>
       <div class="compare-row">
-        <div class="compare-label">Soporte técnico</div>
+        <div class="compare-label"><span class="cl-icon">🎧</span>Soporte técnico</div>
         <div class="compare-val bad">Externo, con costo adicional</div>
         <div class="compare-val good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>24/7 incluido en México</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label"><span class="cl-icon">🔌</span>Integración actual</div>
+        <div class="compare-val bad">Reemplaza todo, costo alto</div>
+        <div class="compare-val good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Se integra a lo que ya tienes</div>
       </div>
     </div>
   </div>
@@ -445,153 +466,195 @@
   </div>
 </section>
 
-<!-- ═══════════════ FEATURES / DASHBOARD ═══════════════ -->
-<section class="section" id="caracteristicas">
+<!-- ═══════════════ ADMIN WEB SHOWCASE ═══════════════ -->
+<section class="section bg-light" id="caracteristicas">
   <div class="container">
     <div class="section-head">
-      <div class="section-badge">📊 Dashboard & App Móvil</div>
-      <h2 class="section-title">Todo el poder de tu acceso<br/><span class="green">en la palma de tu mano</span></h2>
-      <p class="section-desc">App de ágil respuesta respaldada por servidores VPS de alto performance. Control total, en tiempo real, desde cualquier dispositivo.</p>
+      <div class="section-badge">🖥️ Panel de Administración Web</div>
+      <h2 class="section-title">Control total desde<br/><span class="green">cualquier navegador</span></h2>
+      <p class="section-desc">Dashboard completo para administradores. Gestiona unidades, pagos, accesos, dispositivos y reportes desde una sola plataforma.</p>
     </div>
 
-    <!-- Feature cards grid - 3 top -->
-    <div class="features-row">
-      <div class="feat-card reveal">
-        <div class="feat-icon feat-icon--green">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        </div>
-        <h3>Dashboard en Tiempo Real</h3>
-        <p>Monitorea accesos, eventos y estadísticas al instante. Registros completos de entradas, salidas y actividad por residente, horario y dispositivo.</p>
-        <ul class="feat-list">
-          <li>Accesos del día en tiempo real</li>
-          <li>Unidades y dispositivos activos</li>
-          <li>Historial completo de eventos</li>
-          <li>Exportación de reportes PDF/Excel</li>
-        </ul>
+    <!-- Admin tabs showcase -->
+    <div class="admin-showcase reveal">
+      <div class="admin-tabs">
+        <button class="atab active" data-tab="0">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Dashboard
+        </button>
+        <button class="atab" data-tab="1">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          Unidades
+        </button>
+        <button class="atab" data-tab="2">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          Pagos
+        </button>
+        <button class="atab" data-tab="3">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M4.93 4.93l1.41 1.41M12 2v2M12 20v2"/></svg>
+          Configuración
+        </button>
       </div>
-      <div class="feat-card reveal" style="--d:.1s">
-        <div class="feat-icon feat-icon--blue">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      <div class="admin-screen-wrap">
+        <div class="admin-screen active" data-screen="0">
+          <img src="images/admin_dashboard.png" alt="Dashboard principal — accesos, unidades, pagos y dispositivos en tiempo real"/>
+          <div class="admin-caption">
+            <strong>Dashboard en tiempo real</strong> — Unidades, accesos del día, pagos del mes, morosos y dispositivos conectados. Todo de un vistazo.
+          </div>
         </div>
-        <h3>QR Dinámico & Acceso Rápido</h3>
-        <p>Genera QR temporales para visitas, proveedores y servicios externos en segundos. Configura vigencia, usos máximos y permisos por tipo de visitante.</p>
-        <ul class="feat-list">
-          <li>QR para visitas con vigencia configurable</li>
-          <li>Registro de visita por guardia en app</li>
-          <li>Acceso a servicios externos (CFE, paquetería)</li>
-          <li>Botones conmutadores por tipo de acceso</li>
-        </ul>
-      </div>
-      <div class="feat-card reveal" style="--d:.2s">
-        <div class="feat-icon feat-icon--orange">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/></svg>
+        <div class="admin-screen" data-screen="1">
+          <img src="images/admin_unidades.png" alt="Gestión de unidades — propietarios, estado de pago y residentes"/>
+          <div class="admin-caption">
+            <strong>Gestión de unidades</strong> — Alta masiva vía CSV, propietarios, estado de pago, residentes y acciones por unidad.
+          </div>
         </div>
-        <h3>Alertas & Notificaciones Push</h3>
-        <p>Recibe notificaciones inmediatas de todos los eventos relacionados con tu entorno: accesos, emergencias, servicios y mucho más.</p>
-        <ul class="feat-list">
-          <li>Botón de pánico con alerta inmediata</li>
-          <li>Notificaciones de accesos propios</li>
-          <li>Alertas de CFE, paquetería y servicios</li>
-          <li>Dispositivos desconectados o fuera de línea</li>
-        </ul>
+        <div class="admin-screen" data-screen="2">
+          <img src="images/admin_pagos.png" alt="Pagos y cargos — cuotas de mantenimiento, estado y vencimiento"/>
+          <div class="admin-caption">
+            <strong>Pagos & cargos</strong> — Administración financiera completa: cargos mensuales, registro masivo CSV y seguimiento por unidad.
+          </div>
+        </div>
+        <div class="admin-screen" data-screen="3">
+          <img src="images/admin_config.png" alt="Configuración — botones de acceso, QR rápido, tema de app"/>
+          <div class="admin-caption">
+            <strong>Configuración avanzada</strong> — Personaliza botones de acceso, habilita QR rápido (Uber, Delivery), tema de la app y más.
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Bottom features - 3 more with app screenshot -->
-    <div class="features-bottom">
-      <div class="feat-bottom-cards">
-        <div class="feat-bottom-card reveal">
-          <div class="fbc-header">
-            <div class="feat-icon feat-icon--purple feat-icon--sm">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-            </div>
-            <h4>Control de Pagos</h4>
+    <!-- Admin feature pills -->
+    <div class="admin-features reveal">
+      <div class="af-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Importación masiva CSV</div>
+      <div class="af-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Gestión de morosos</div>
+      <div class="af-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Bitácora de accesos</div>
+      <div class="af-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Reportes automáticos</div>
+      <div class="af-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Multi-fraccionamiento</div>
+      <div class="af-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Control de dispositivos</div>
+      <div class="af-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Notificaciones push masivas</div>
+      <div class="af-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Servicios QR configurables</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ APP MÓVIL SHOWCASE ═══════════════ -->
+<section class="section" id="app">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-badge">📱 App Móvil para Residentes & Guardias</div>
+      <h2 class="section-title">Todo tu acceso,<br/><span class="green">en la palma de tu mano</span></h2>
+      <p class="section-desc">Servidores VPS de alto performance. Respuesta ágil, tiempo real. Disponible para Android e iOS.</p>
+    </div>
+
+    <!-- App feature tabs with real screenshots -->
+    <div class="app-showcase">
+      <div class="app-feat-list">
+        <div class="app-feat-item active" data-app="0">
+          <div class="afi-icon afi-green">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           </div>
-          <p>Gestiona pagos de mantenimiento, servicios y cuotas directamente desde la app. Historial completo y recordatorios automáticos.</p>
-          <div class="fbc-tag">💰 Ahorro en infraestructura</div>
-        </div>
-        <div class="feat-bottom-card reveal" style="--d:.08s">
-          <div class="fbc-header">
-            <div class="feat-icon feat-icon--teal feat-icon--sm">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            </div>
-            <h4>Abrir Acceso Remoto</h4>
+          <div>
+            <h4>Apertura de Acceso</h4>
+            <p>Un toque para abrir la pluma o puerta. Confirmación en pantalla antes de enviar el comando.</p>
           </div>
-          <p>Abre la pluma o puerta del fraccionamiento desde tu teléfono con un solo toque. Sin depender del guardia, a cualquier hora.</p>
-          <div class="fbc-tag">🔓 Un toque = acceso abierto</div>
         </div>
-        <div class="feat-bottom-card reveal" style="--d:.16s">
-          <div class="fbc-header">
-            <div class="feat-icon feat-icon--red feat-icon--sm">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            </div>
+        <div class="app-feat-item" data-app="1">
+          <div class="afi-icon afi-blue">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <div>
+            <h4>QR Rápido & Visitantes</h4>
+            <p>Genera QR para Uber, Delivery, servicios o visitas. Configura vigencia y usos con sliders intuitivos.</p>
+          </div>
+        </div>
+        <div class="app-feat-item" data-app="2">
+          <div class="afi-icon afi-red">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div>
             <h4>Botón de Pánico</h4>
+            <p>Alerta de emergencia inmediata con datos del residente, unidad y números de emergencia configurados.</p>
           </div>
-          <p>Activa una alerta de emergencia instantánea desde la app. Notifica a administradores y guardias en tiempo real con ubicación y datos del usuario.</p>
-          <div class="fbc-tag">🚨 Respuesta en segundos</div>
         </div>
-        <div class="feat-bottom-card reveal" style="--d:.24s">
-          <div class="fbc-header">
-            <div class="feat-icon feat-icon--green feat-icon--sm">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h4>Registro de Visitas por Guardia</h4>
+        <div class="app-feat-item" data-app="3">
+          <div class="afi-icon afi-orange">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3z"/></svg>
           </div>
-          <p>El guardia registra visitantes directamente desde su app, con foto, datos y destino. Notificación instantánea al residente para autorizar.</p>
-          <div class="fbc-tag">📋 Sin papeles, sin errores</div>
+          <div>
+            <h4>Alertas & Notificaciones</h4>
+            <p>Push en tiempo real: emergencias, dispositivos offline, solicitudes CFE y paquetería.</p>
+          </div>
+        </div>
+        <div class="app-feat-item" data-app="4">
+          <div class="afi-icon afi-purple">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          </div>
+          <div>
+            <h4>Bitácora de Accesos</h4>
+            <p>Historial completo con hora, fecha, método de acceso y estatus. Registro manual para guardias.</p>
+          </div>
+        </div>
+        <div class="app-feat-item" data-app="5">
+          <div class="afi-icon afi-teal">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <div>
+            <h4>Control de Pagos</h4>
+            <p>Consulta cuotas, CLABE, referencia y cargos pendientes. Sin llamadas al administrador.</p>
+          </div>
         </div>
       </div>
 
-      <div class="feat-phone-showcase reveal-left">
-        <div class="phone-showcase-wrap">
-          <div class="phone-showcase-frame">
-            <img src="images/app_home.png" alt="App Acceso Digital — pantalla principal con accesos, QR y pagos"/>
+      <div class="app-phone-display">
+        <!-- Auto-carousel phone -->
+        <div class="phone-device">
+          <div class="phone-notch"></div>
+          <div class="phone-screen-carousel" id="appCarousel">
+            <img src="images/app_entrada.png" class="asc-slide active" alt="Apertura de acceso"/>
+            <img src="images/app_qr_rapido.png" class="asc-slide" alt="QR rápido Uber Delivery"/>
+            <img src="images/app_emergencia.png" class="asc-slide" alt="Pantalla de emergencia"/>
+            <img src="images/app_alertas.png" class="asc-slide" alt="Notificaciones y alertas"/>
+            <img src="images/app_bitacora.png" class="asc-slide" alt="Bitácora de accesos"/>
+            <img src="images/app_pagos.png" class="asc-slide" alt="Control de pagos"/>
           </div>
-          <div class="phone-badge phone-badge--a">
-            <span class="pbadge-dot pbadge-dot--green"></span>
-            <span>Accesos en vivo</span>
-          </div>
-          <div class="phone-badge phone-badge--b">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>VPS Alto Performance</span>
-          </div>
+        </div>
+        <!-- Dot indicators -->
+        <div class="carousel-dots" id="carouselDots">
+          <span class="cdot active"></span>
+          <span class="cdot"></span>
+          <span class="cdot"></span>
+          <span class="cdot"></span>
+          <span class="cdot"></span>
+          <span class="cdot"></span>
+        </div>
+        <!-- Floating badges -->
+        <div class="app-float-badge afb--a">
+          <span class="afb-dot"></span>
+          Sistema activo 24/7
+        </div>
+        <div class="app-float-badge afb--b">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          VPS alto performance
         </div>
       </div>
     </div>
 
-    <!-- Services QR row -->
+    <!-- Services QR strip -->
     <div class="services-qr-row reveal">
       <div class="sqr-title">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-        Acceso por QR para Servicios Federales y Externos
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        QR Rápido para servicios externos
       </div>
       <div class="sqr-pills">
-        <div class="sqr-pill">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          CFE / Electricidad
-        </div>
-        <div class="sqr-pill">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-          Paquetería & Mensajería
-        </div>
-        <div class="sqr-pill">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12"/></svg>
-          Servicios de Limpieza
-        </div>
-        <div class="sqr-pill">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-          Proveedores Autorizados
-        </div>
-        <div class="sqr-pill">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          Accesos Temporales
-        </div>
-        <div class="sqr-pill sqr-pill--highlight">
-          💸 Ahorro hasta 70% en infraestructura
-        </div>
+        <div class="sqr-pill">🚗 Uber / Didi</div>
+        <div class="sqr-pill">📦 Delivery</div>
+        <div class="sqr-pill">⚡ CFE</div>
+        <div class="sqr-pill">🔧 Servicios</div>
+        <div class="sqr-pill">📬 Paquetería</div>
+        <div class="sqr-pill">👷 Proveedores</div>
+        <div class="sqr-pill sqr-pill--highlight">💸 Sin infraestructura extra</div>
       </div>
     </div>
-
   </div>
 </section>
 
