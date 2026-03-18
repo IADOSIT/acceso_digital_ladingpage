@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acceso Digital - Sistema integral de gestión de accesos vehiculares, peatonales y visitas. Tecnología de vanguardia para tu empresa en Monterrey, Nuevo León.">
+    <meta name="keywords" content="control de acceso, sistema de accesos, acceso vehicular, acceso peatonal, gestión de visitas, Monterrey, iaDoS">
+    <meta name="author" content="Acceso Digital - iaDoS">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://accesodigital.iados.mx/">
+    <meta property="og:title" content="Acceso Digital - Control de Accesos Inteligente">
+    <meta property="og:description" content="Sistema integral de gestión de accesos vehiculares, peatonales y visitas">
+    <meta property="og:image" content="https://customer-assets.emergentagent.com/job_digital-access-5/artifacts/zjudaxem_logo_iados_512.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://accesodigital.iados.mx/">
+    <meta property="twitter:title" content="Acceso Digital - Control de Accesos Inteligente">
+    <meta property="twitter:description" content="Sistema integral de gestión de accesos vehiculares, peatonales y visitas">
+    <meta property="twitter:image" content="https://customer-assets.emergentagent.com/job_digital-access-5/artifacts/zjudaxem_logo_iados_512.png">
+
+    <title>Acceso Digital - Control de Accesos Inteligente | iaDoS</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="48x48" href="https://customer-assets.emergentagent.com/job_digital-access-5/artifacts/6vnl14ka_logo_iados_48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://customer-assets.emergentagent.com/job_digital-access-5/artifacts/mybgw64s_logo_iados_96.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://customer-assets.emergentagent.com/job_digital-access-5/artifacts/zjudaxem_logo_iados_512.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #10b981;
+            --primary-dark: #059669;
+            --secondary-color: #06b6d4;
+            --dark-bg: #0f172a;
+            --dark-secondary: #1e293b;
+            --light-text: #f8fafc;
+            --gray-text: #cbd5e1;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--light-text);
+            background-color: var(--dark-bg);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--gray-text);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 2rem;
+            margin-top: 70px;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-secondary) 100%);
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-logo {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 2rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            color: var(--gray-text);
+            margin-bottom: 2.5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-block;
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-color);
+            padding: 1rem 2.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-block;
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 6rem 2rem;
+            background: var(--dark-secondary);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1rem;
+            color: var(--light-text);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--gray-text);
+            font-size: 1.2rem;
+            margin-bottom: 4rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: var(--dark-bg);
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .feature-card p {
+            color: var(--gray-text);
+            line-height: 1.8;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 6rem 2rem;
+            background: var(--dark-bg);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .benefit-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: var(--dark-secondary);
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        .benefit-item:hover {
+            transform: translateX(10px);
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .benefit-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            flex-shrink: 0;
+        }
+
+        .benefit-content h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--light-text);
+        }
+
+        .benefit-content p {
+            color: var(--gray-text);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--primary-color);
+            padding: 1rem 2.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-secondary);
+            padding: 3rem 2rem 1.5rem;
+            color: var(--gray-text);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .footer-section p, .footer-section a {
+            color: var(--gray-text);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-icon {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .whatsapp-link {
+            background: #25D366;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-link:hover {
+            background: #20BA5A;
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--gray-text);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--light-text);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--dark-bg);
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero {
+                min-height: auto;
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s, transform 0.6s;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="https://customer-assets.emergentagent.com/job_digital-access-5/artifacts/wtsdv18u_logo_iados_white_1024.png" alt="Acceso Digital Logo">
+                <span>Acceso Digital</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#ventajas">Ventajas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="https://accesodigital.iados.mx/" class="cta-button" target="_blank">Acceder al Sistema</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <img src="https://customer-assets.emergentagent.com/job_digital-access-5/artifacts/3rzhws5h_logo_iados_transparent_1024.png" alt="iaDoS Logo" class="hero-logo">
+            <h1>Control de Accesos Inteligente</h1>
+            <p>Sistema integral de gestión de accesos vehiculares, peatonales y visitas. Tecnología de vanguardia para la seguridad de tu empresa.</p>
+            <div class="hero-buttons">
+                <a href="https://accesodigital.iados.mx/" class="btn-primary" target="_blank">Acceder al Sistema</a>
+                <a href="#contacto" class="btn-secondary">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="caracteristicas">
+        <h2 class="section-title">Características del Sistema</h2>
+        <p class="section-subtitle">Una solución completa para la gestión de accesos en tu organización</p>
+        <div class="features-grid">
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🚗</div>
+                <h3>Control Vehicular</h3>
+                <p>Gestión completa de acceso vehicular con registro automático de placas, tiempos de entrada y salida, y control de estacionamientos.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🚶</div>
+                <h3>Acceso Peatonal</h3>
+                <p>Control de personal mediante tarjetas inteligentes, biometría y códigos QR. Registro de asistencia y horarios en tiempo real.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">👥</div>
+                <h3>Gestión de Visitas</h3>
+                <p>Pre-registro de visitantes, generación de pases temporales, notificaciones automáticas y seguimiento completo del flujo de visitas.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">📊</div>
+                <h3>Reportes Detallados</h3>
+                <p>Dashboard ejecutivo con estadísticas en tiempo real, reportes personalizables y análisis de patrones de acceso.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🔒</div>
+                <h3>Máxima Seguridad</h3>
+                <p>Encriptación de datos, autenticación multifactor, respaldos automáticos y cumplimiento de normativas de seguridad.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">📱</div>
+                <h3>App Móvil</h3>
+                <p>Administra todo desde tu smartphone. Aprueba visitas, monitorea accesos y recibe notificaciones en tiempo real.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="ventajas">
+        <h2 class="section-title">Ventajas de Acceso Digital</h2>
+        <p class="section-subtitle">Por qué las empresas líderes confían en nosotros</p>
+        <div class="benefits-grid">
+            <div class="benefit-item fade-in">
+                <div class="benefit-icon">⚡</div>
+                <div class="benefit-content">
+                    <h4>Implementación Rápida</h4>
+                    <p>Sistema operativo en menos de 48 horas. Instalación profesional sin interrumpir tus operaciones.</p>
+                </div>
+            </div>
+            <div class="benefit-item fade-in">
+                <div class="benefit-icon">💰</div>
+                <div class="benefit-content">
+                    <h4>Reducción de Costos</h4>
+                    <p>Elimina el uso de papel, optimiza recursos humanos y reduce tiempos de registro hasta en un 80%.</p>
+                </div>
+            </div>
+            <div class="benefit-item fade-in">
+                <div class="benefit-icon">🔄</div>
+                <div class="benefit-content">
+                    <h4>Actualizaciones Automáticas</h4>
+                    <p>Sistema siempre actualizado con las últimas funcionalidades y parches de seguridad sin costo adicional.</p>
+                </div>
+            </div>
+            <div class="benefit-item fade-in">
+                <div class="benefit-icon">🎯</div>
+                <div class="benefit-content">
+                    <h4>Personalizable</h4>
+                    <p>Adaptamos el sistema a las necesidades específicas de tu empresa y sector industrial.</p>
+                </div>
+            </div>
+            <div class="benefit-item fade-in">
+                <div class="benefit-icon">🌐</div>
+                <div class="benefit-content">
+                    <h4>Acceso Desde Cualquier Lugar</h4>
+                    <p>Plataforma en la nube con acceso 24/7 desde cualquier dispositivo con conexión a internet.</p>
+                </div>
+            </div>
+            <div class="benefit-item fade-in">
+                <div class="benefit-icon">👨‍💼</div>
+                <div class="benefit-content">
+                    <h4>Soporte Técnico Experto</h4>
+                    <p>Equipo de soporte disponible en horario extendido. Capacitación incluida para todo tu personal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>¿Listo para transformar la seguridad de tu empresa?</h2>
+        <p>Solicita una demostración gratuita y descubre cómo Acceso Digital puede optimizar tu gestión de accesos</p>
+        <a href="#contacto" class="btn-white">Solicitar Demostración</a>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Acceso Digital</h3>
+                <p>Sistema integral de control de accesos para empresas que buscan seguridad, eficiencia y tecnología de vanguardia.</p>
+                <p style="margin-top: 1rem;">© 2024 iaDoS. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <span>Monterrey, Nuevo León, México</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <div>
+                        <a href="https://wa.me/528114137902" class="whatsapp-link" target="_blank">
+                            💬 +52 81 1413 7902
+                        </a>
+                        <a href="https://wa.me/528318989580" class="whatsapp-link" target="_blank">
+                            💬 +52 83 1898 9580
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#caracteristicas">Características</a>
+                <a href="#ventajas">Ventajas</a>
+                <a href="https://accesodigital.iados.mx/" target="_blank">Acceder al Sistema</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Desarrollado con tecnología de última generación | iaDoS</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('navLinks').classList.remove('active');
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Header shadow on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.5)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
+            }
+        });
+    </script>
+</body>
+</html>
+
