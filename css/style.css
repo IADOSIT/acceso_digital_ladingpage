@@ -1620,3 +1620,157 @@ ul { list-style: none; }
   .admin-tabs { overflow-x: auto; }
   .app-showcase { gap: 32px; }
 }
+
+/* ══════════════════════════════════════════
+   COMPARE v2 — compact with integration header
+══════════════════════════════════════════ */
+.cmp-v2 {
+  border: 1px solid var(--grey-200);
+  border-radius: var(--rl);
+  overflow: hidden;
+  box-shadow: var(--s2);
+  margin-top: 0;
+}
+.cmpv2-integration {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-bottom: 1px solid var(--green-border);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.cmpv2-int-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.cmpv2-int-left img { border-radius: 6px; flex-shrink: 0; }
+.cmpv2-int-left strong { display: block; font-size: .86rem; font-weight: 700; color: var(--grey-900); letter-spacing: -.01em; }
+.cmpv2-int-left span  { font-size: .76rem; color: var(--grey-500); line-height: 1.4; }
+.cmpv2-int-badges {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.cmpv2-int-badges span {
+  font-size: .7rem;
+  font-weight: 600;
+  color: var(--green-text);
+  background: var(--white);
+  border: 1px solid var(--green-border);
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.cmpv2-table { background: var(--white); }
+.cmpv2-head {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  background: var(--grey-50);
+  border-bottom: 1px solid var(--grey-200);
+  padding: 10px 20px;
+  gap: 8px;
+}
+.cmpv2-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+.cmpv2-old { color: var(--grey-400); }
+.cmpv2-new { color: var(--green-text); }
+.cmpv2-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  border-bottom: 1px solid var(--grey-100);
+  padding: 9px 20px;
+  gap: 8px;
+  align-items: center;
+  transition: background var(--t) var(--ease);
+}
+.cmpv2-row:last-child { border-bottom: none; }
+.cmpv2-row:hover { background: var(--grey-50); }
+.cmpv2-row--hl { background: #f0fdf4; }
+.cmpv2-row--hl:hover { background: #dcfce7; }
+.cmpv2-lbl {
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--grey-800);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.cmpv2-lbl span { font-size: .85rem; }
+.cmpv2-v {
+  font-size: .78rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.cmpv2-v.bad  { color: var(--grey-400); }
+.cmpv2-v.good { color: var(--green-text); font-weight: 600; }
+.cmpv2-v.good svg { flex-shrink: 0; }
+
+/* ══════════════════════════════════════════
+   ADMIN GALLERY MOSAIC
+══════════════════════════════════════════ */
+.admin-gallery {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.agallery-label {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--grey-400);
+  margin-bottom: 12px;
+  text-align: center;
+}
+.agallery-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+.agallery-item {
+  position: relative;
+  border-radius: var(--r);
+  overflow: hidden;
+  border: 1px solid var(--grey-200);
+  box-shadow: var(--s1);
+  transition: all var(--t) var(--ease);
+  cursor: pointer;
+}
+.agallery-item:hover { box-shadow: var(--s3); transform: translateY(-2px); border-color: var(--green-border); }
+.agallery-item img { width: 100%; object-fit: cover; object-position: top; display: block; aspect-ratio: 16/9; }
+.agallery-item--lg { grid-row: 1 / 3; }
+.agallery-item--lg img { aspect-ratio: 4/3; height: 100%; object-fit: cover; }
+.agallery-item--wide { grid-column: 2 / 4; }
+.agallery-caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,.55));
+  color: #fff;
+  font-size: .72rem;
+  font-weight: 600;
+  padding: 16px 10px 8px;
+  letter-spacing: .02em;
+}
+
+@media (max-width: 768px) {
+  .agallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+  .agallery-item--lg { grid-row: auto; grid-column: 1 / 3; }
+  .agallery-item--lg img { aspect-ratio: 16/9; }
+  .agallery-item--wide { grid-column: 1 / 3; }
+  .cmpv2-integration { flex-direction: column; align-items: flex-start; }
+  .cmpv2-head, .cmpv2-row { font-size: .72rem; padding: 8px 12px; }
+}
