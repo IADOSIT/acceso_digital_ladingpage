@@ -4,8 +4,6 @@ services:
   landing-page:
     build: .
     container_name: acceso-digital-landing-page
-    ports:
-      - "8085:80"
     volumes:
       - .:/usr/share/nginx/html
     restart: always
