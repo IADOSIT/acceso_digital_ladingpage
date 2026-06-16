@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Política de Privacidad — Acceso Digital by iaDoS</title>
+  <meta name="description" content="Política de privacidad de Acceso Digital by iaDoS. Conoce cómo recopilamos, usamos y protegemos tus datos personales."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://accesodigital.iados.mx/privacidad.html"/>
+  <link rel="icon" type="image/png" href="images/logo_ico.png"/>
+  <link rel="apple-touch-icon" href="images/logo_app.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    /* ── Página de privacidad ── */
+    .privacy-hero {
+      padding: 120px 0 56px;
+      background: linear-gradient(135deg, #f0fdf4 0%, #fff 60%);
+      border-bottom: 1px solid var(--grey-200);
+    }
+    .privacy-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--green-light);
+      color: var(--green-text);
+      border: 1px solid var(--green-border);
+      border-radius: 99px;
+      padding: 4px 12px;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .privacy-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: var(--grey-900);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .privacy-hero h1 span { color: var(--green); }
+    .privacy-hero-meta {
+      font-size: .85rem;
+      color: var(--grey-500);
+    }
+    .privacy-hero-meta strong { color: var(--grey-700); font-weight: 600; }
+
+    /* ── Contenido ── */
+    .privacy-body {
+      padding: 60px 0 80px;
+    }
+    .privacy-grid {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    /* Índice lateral */
+    .privacy-toc {
+      position: sticky;
+      top: 88px;
+      background: var(--grey-50);
+      border: 1px solid var(--grey-200);
+      border-radius: var(--rl);
+      padding: 20px;
+    }
+    .privacy-toc h6 {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--grey-400);
+      margin-bottom: 12px;
+    }
+    .privacy-toc a {
+      display: block;
+      font-size: .8rem;
+      color: var(--grey-500);
+      padding: 5px 8px;
+      border-radius: 6px;
+      transition: all var(--t) var(--ease);
+      line-height: 1.4;
+    }
+    .privacy-toc a:hover { background: var(--green-light); color: var(--green-text); }
+
+    /* Artículos */
+    .privacy-article { max-width: 720px; }
+    .privacy-section {
+      margin-bottom: 44px;
+      scroll-margin-top: 88px;
+    }
+    .privacy-section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--grey-900);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--green-light);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .privacy-section h2 .sec-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      background: var(--green);
+      color: #fff;
+      border-radius: 50%;
+      font-size: .75rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .privacy-section p {
+      font-size: .9rem;
+      color: var(--grey-700);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+    .privacy-section ul, .privacy-section ol {
+      list-style: none;
+      margin: 10px 0 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .privacy-section ul li, .privacy-section ol li {
+      font-size: .88rem;
+      color: var(--grey-700);
+      line-height: 1.65;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .privacy-section ul li::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+    .privacy-section ol { counter-reset: li; }
+    .privacy-section ol li { counter-increment: li; }
+    .privacy-section ol li::before {
+      content: counter(li) '.';
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--green-text);
+      flex-shrink: 0;
+      min-width: 18px;
+      margin-top: 1px;
+    }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .82rem;
+      margin: 14px 0;
+      border-radius: var(--r);
+      overflow: hidden;
+      border: 1px solid var(--grey-200);
+    }
+    .data-table th {
+      background: var(--grey-100);
+      color: var(--grey-700);
+      font-weight: 600;
+      font-size: .75rem;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      padding: 10px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--grey-200);
+    }
+    .data-table td {
+      padding: 10px 14px;
+      color: var(--grey-700);
+      border-bottom: 1px solid var(--grey-100);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:nth-child(even) td { background: var(--grey-50); }
+    .badge-yes {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--green-light);
+      color: var(--green-text);
+      border-radius: 99px;
+      padding: 2px 8px;
+      font-size: .72rem;
+      font-weight: 600;
+    }
+    .badge-no {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--grey-100);
+      color: var(--grey-500);
+      border-radius: 99px;
+      padding: 2px 8px;
+      font-size: .72rem;
+      font-weight: 600;
+    }
+    .info-box {
+      background: var(--green-light);
+      border: 1px solid var(--green-border);
+      border-radius: var(--r);
+      padding: 14px 16px;
+      font-size: .85rem;
+      color: var(--green-text);
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin: 14px 0;
+    }
+    .info-box svg { flex-shrink: 0; margin-top: 1px; }
+    .contact-card {
+      background: var(--grey-50);
+      border: 1px solid var(--grey-200);
+      border-radius: var(--rl);
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .contact-card a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .875rem;
+      color: var(--green-text);
+      font-weight: 500;
+      transition: color var(--t);
+    }
+    .contact-card a:hover { color: var(--green-hover); }
+
+    @media (max-width: 768px) {
+      .privacy-grid { grid-template-columns: 1fr; }
+      .privacy-toc { display: none; }
+      .privacy-hero { padding: 100px 0 40px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="/" class="navbar-logo">
+      <img src="images/logo_nav.png" alt="Acceso Digital iaDoS" width="36" height="36"/>
+      <div class="navbar-brand">
+        <span class="navbar-name">Acceso Digital</span>
+        <span class="navbar-sub">by iaDoS</span>
+      </div>
+    </a>
+
+    <nav class="navbar-nav" id="navLinks">
+      <a href="/#soluciones">Soluciones</a>
+      <a href="/#ventajas">Ventajas</a>
+      <a href="/#caracteristicas">Características</a>
+      <a href="/#contacto">Contacto</a>
+    </nav>
+
+    <div class="navbar-actions">
+      <a href="https://accesodigitalapp.iados.mx/login" target="_blank" rel="noopener" class="btn-admin">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Acceso Admin
+      </a>
+      <button class="burger" id="burger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="privacy-hero">
+  <div class="container">
+    <div class="privacy-hero-badge">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Privacidad & Datos
+    </div>
+    <h1>Política de <span>Privacidad</span></h1>
+    <p class="privacy-hero-meta">
+      <strong>Acceso Digital by iaDoS</strong> &nbsp;·&nbsp;
+      Última actualización: <strong>junio 2026</strong> &nbsp;·&nbsp;
+      Vigente desde: <strong>junio 2026</strong>
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════ CUERPO ═══════════════ -->
+<section class="privacy-body">
+  <div class="container privacy-grid">
+
+    <!-- Índice lateral -->
+    <aside class="privacy-toc">
+      <h6>Contenido</h6>
+      <a href="#responsable">1. Responsable</a>
+      <a href="#datos">2. Datos que recopilamos</a>
+      <a href="#finalidades">3. Finalidades</a>
+      <a href="#terceros">4. Terceros</a>
+      <a href="#retencion">5. Retención</a>
+      <a href="#seguridad">6. Seguridad</a>
+      <a href="#derechos">7. Derechos ARCO</a>
+      <a href="#menores">8. Menores de edad</a>
+      <a href="#cookies">9. Cookies</a>
+      <a href="#cambios">10. Cambios</a>
+      <a href="#contacto">11. Contacto</a>
+    </aside>
+
+    <!-- Artículo -->
+    <article class="privacy-article">
+
+      <div class="info-box">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <span>Esta Política de Privacidad aplica a la aplicación móvil <strong>Acceso Digital</strong> (Android) y al portal web de administración, ambos operados por <strong>iaDoS</strong>. Al utilizar nuestros servicios, aceptas las prácticas descritas aquí.</span>
+      </div>
+
+      <!-- 1 -->
+      <div class="privacy-section" id="responsable">
+        <h2><span class="sec-num">1</span> Responsable del tratamiento</h2>
+        <p>El responsable del tratamiento de tus datos personales es:</p>
+        <div class="contact-card">
+          <strong style="font-size:.95rem;color:var(--grey-900)">iaDoS</strong>
+          <a href="mailto:hello@iados.mx">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            hello@iados.mx
+          </a>
+          <a href="https://iados.mx" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            iados.mx
+          </a>
+          <span style="font-size:.83rem;color:var(--grey-500)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:middle;margin-right:4px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Monterrey, Nuevo León, México
+          </span>
+        </div>
+        <p style="margin-top:14px">Esta política cumple con la <strong>Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</strong> vigente en México, así como con las políticas de privacidad requeridas por Google Play Store.</p>
+      </div>
+
+      <!-- 2 -->
+      <div class="privacy-section" id="datos">
+        <h2><span class="sec-num">2</span> Datos personales que recopilamos</h2>
+        <p>La siguiente tabla describe los tipos de datos que recopilamos según el rol del usuario:</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Tipo de dato</th>
+              <th>Ejemplo</th>
+              <th>¿Se recopila?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Nombre completo</strong></td>
+              <td>Nombre y apellido del residente o administrador</td>
+              <td><span class="badge-yes">✓ Sí</span></td>
+            </tr>
+            <tr>
+              <td><strong>Correo electrónico</strong></td>
+              <td>Identificador de cuenta, acceso al sistema</td>
+              <td><span class="badge-yes">✓ Sí</span></td>
+            </tr>
+            <tr>
+              <td><strong>Número de teléfono</strong></td>
+              <td>Contacto del propietario/residente para alertas WhatsApp</td>
+              <td><span class="badge-yes">✓ Sí</span></td>
+            </tr>
+            <tr>
+              <td><strong>Identificador de dispositivo</strong></td>
+              <td>UUID generado en la app para control de sesiones</td>
+              <td><span class="badge-yes">✓ Sí</span></td>
+            </tr>
+            <tr>
+              <td><strong>Nombre/modelo del dispositivo</strong></td>
+              <td>Ej. "Samsung Galaxy A54" — mostrado en sesiones activas</td>
+              <td><span class="badge-yes">✓ Sí</span></td>
+            </tr>
+            <tr>
+              <td><strong>Token de notificaciones push</strong></td>
+              <td>FCM token para recibir alertas de acceso en tiempo real</td>
+              <td><span class="badge-yes">✓ Sí</span></td>
+            </tr>
+            <tr>
+              <td><strong>Registros de acceso</strong></td>
+              <td>Fecha/hora y tipo de acceso (entrada/salida, visitante)</td>
+              <td><span class="badge-yes">✓ Sí</span></td>
+            </tr>
+            <tr>
+              <td><strong>Imágenes de cámara</strong></td>
+              <td>La cámara solo se usa para escanear códigos QR, no almacena fotos</td>
+              <td><span class="badge-no">✗ No</span></td>
+            </tr>
+            <tr>
+              <td><strong>Ubicación GPS</strong></td>
+              <td>No se solicita ni accede a tu ubicación</td>
+              <td><span class="badge-no">✗ No</span></td>
+            </tr>
+            <tr>
+              <td><strong>Datos financieros</strong></td>
+              <td>No procesamos pagos con tarjeta directamente en la app</td>
+              <td><span class="badge-no">✗ No</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><strong>Datos del fraccionamiento/condominio:</strong> Como parte de nuestra solución multi-tenant, también almacenamos información del fraccionamiento al que perteneces (nombre, configuración, unidad asignada) para mostrarte la información correcta dentro del sistema.</p>
+      </div>
+
+      <!-- 3 -->
+      <div class="privacy-section" id="finalidades">
+        <h2><span class="sec-num">3</span> Finalidades del tratamiento</h2>
+        <p>Usamos tus datos únicamente para las siguientes finalidades:</p>
+        <ul>
+          <li><strong>Autenticación y control de acceso:</strong> verificar tu identidad al iniciar sesión y asignarte los permisos correctos según tu rol (residente, guardia o administrador).</li>
+          <li><strong>Gestión de sesiones por dispositivo:</strong> el UUID del dispositivo nos permite limitar el número de sesiones activas simultáneas y brindarte visibilidad y control sobre qué equipos tienen acceso a tu cuenta.</li>
+          <li><strong>Notificaciones de acceso en tiempo real:</strong> enviamos alertas push (vía Firebase Cloud Messaging) cuando hay un evento de acceso relevante para tu unidad o fraccionamiento.</li>
+          <li><strong>Escaneo de códigos QR:</strong> la cámara se usa exclusivamente para leer códigos QR de visitantes o de acceso rápido. Ninguna imagen es capturada, almacenada ni transmitida.</li>
+          <li><strong>Control y bitácora de accesos:</strong> registramos entradas/salidas para que los administradores puedan auditar el acceso al fraccionamiento.</li>
+          <li><strong>Comunicación operativa:</strong> tu teléfono o correo puede usarse para enviarte notificaciones del sistema o responder solicitudes de soporte.</li>
+          <li><strong>Mejora del servicio:</strong> analizamos patrones de uso agregados (sin datos personales identificables) para mejorar la plataforma.</li>
+        </ul>
+        <p><strong>No utilizamos tus datos con fines de publicidad, marketing de terceros ni venta de información.</strong></p>
+      </div>
+
+      <!-- 4 -->
+      <div class="privacy-section" id="terceros">
+        <h2><span class="sec-num">4</span> Compartición con terceros</h2>
+        <p>Únicamente compartimos datos con los siguientes proveedores de confianza, en la medida mínima necesaria para operar el servicio:</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Proveedor</th>
+              <th>Datos compartidos</th>
+              <th>Propósito</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Google Firebase (FCM)</strong></td>
+              <td>Token de dispositivo, contenido de la notificación</td>
+              <td>Entrega de notificaciones push de acceso</td>
+            </tr>
+            <tr>
+              <td><strong>Servidor propio (VPS iaDoS)</strong></td>
+              <td>Todos los datos listados en la sección 2</td>
+              <td>Almacenamiento y procesamiento del sistema de accesos</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><strong>No vendemos, alquilamos ni compartimos tus datos personales con anunciantes ni con ningún tercero ajeno a la operación del servicio.</strong></p>
+        <p>El administrador de tu fraccionamiento (usuario ADMIN) puede ver los datos de los residentes y unidades de su propio fraccionamiento con el propósito de gestionar el acceso. No puede ver datos de otros fraccionamientos.</p>
+      </div>
+
+      <!-- 5 -->
+      <div class="privacy-section" id="retencion">
+        <h2><span class="sec-num">5</span> Retención de datos</h2>
+        <p>Conservamos tus datos durante el tiempo necesario para operar el servicio:</p>
+        <ul>
+          <li><strong>Datos de cuenta:</strong> mientras la cuenta esté activa en el sistema.</li>
+          <li><strong>Bitácora de accesos:</strong> hasta 12 meses a partir de la fecha del evento.</li>
+          <li><strong>Sesiones de dispositivo:</strong> hasta que el usuario o administrador las revoque, o hasta 90 días de inactividad.</li>
+          <li><strong>Tokens FCM:</strong> se eliminan al cerrar sesión o al revocar el dispositivo.</li>
+        </ul>
+        <p>Al dar de baja una cuenta o desinstalar la app, puedes solicitar la eliminación de tus datos enviando un correo a <a href="mailto:hello@iados.mx" style="color:var(--green-text);font-weight:600">hello@iados.mx</a>.</p>
+      </div>
+
+      <!-- 6 -->
+      <div class="privacy-section" id="seguridad">
+        <h2><span class="sec-num">6</span> Medidas de seguridad</h2>
+        <p>Implementamos salvaguardas técnicas y organizacionales para proteger tus datos:</p>
+        <ul>
+          <li>Toda la comunicación entre la app y el servidor usa <strong>HTTPS/TLS</strong>. La app bloquea el tráfico HTTP no cifrado.</li>
+          <li>Las contraseñas se almacenan usando <strong>hashing seguro</strong> (bcrypt) — nunca en texto claro.</li>
+          <li>Los tokens de sesión (JWT) se guardan en el <strong>almacenamiento seguro cifrado del sistema operativo</strong> del dispositivo (Android Keystore).</li>
+          <li>El servidor se aloja en infraestructura privada con acceso restringido por SSH y firewall.</li>
+          <li>Limitamos el acceso a los datos según el rol del usuario (ADMIN, GUARDIA, RESIDENTE).</li>
+          <li>Control de sesiones por dispositivo — el sistema limita cuántos dispositivos pueden estar activos simultáneamente por cuenta.</li>
+        </ul>
+      </div>
+
+      <!-- 7 -->
+      <div class="privacy-section" id="derechos">
+        <h2><span class="sec-num">7</span> Derechos ARCO</h2>
+        <p>De acuerdo con la LFPDPPP, tienes derecho a:</p>
+        <ol>
+          <li><strong>Acceso:</strong> conocer qué datos personales tenemos de ti y cómo los usamos.</li>
+          <li><strong>Rectificación:</strong> corregir datos inexactos o incompletos.</li>
+          <li><strong>Cancelación:</strong> solicitar la eliminación de tus datos cuando no sean necesarios para la finalidad original.</li>
+          <li><strong>Oposición:</strong> oponerte al tratamiento de tus datos para finalidades específicas.</li>
+        </ol>
+        <p>Para ejercer cualquiera de estos derechos, envía tu solicitud a <a href="mailto:hello@iados.mx" style="color:var(--green-text);font-weight:600">hello@iados.mx</a> indicando tu nombre, correo registrado y el derecho que deseas ejercer. Atenderemos tu solicitud en un plazo máximo de 20 días hábiles.</p>
+        <div class="info-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Si eres residente, tu administrador de fraccionamiento también puede actualizar o eliminar tu información desde el portal. Contáctalo directamente para cambios operativos del día a día.</span>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="privacy-section" id="menores">
+        <h2><span class="sec-num">8</span> Menores de edad</h2>
+        <p>Acceso Digital es una plataforma profesional de control de accesos dirigida exclusivamente a <strong>mayores de 18 años</strong> (administradores, guardias y residentes adultos). No recopilamos intencionalmente datos de menores de edad.</p>
+        <p>Si detectas que un menor ha proporcionado datos personales sin autorización, contáctanos en <a href="mailto:hello@iados.mx" style="color:var(--green-text);font-weight:600">hello@iados.mx</a> para proceder a su eliminación inmediata.</p>
+      </div>
+
+      <!-- 9 -->
+      <div class="privacy-section" id="cookies">
+        <h2><span class="sec-num">9</span> Cookies y tecnologías similares</h2>
+        <p><strong>App móvil:</strong> no utiliza cookies. Usa almacenamiento seguro cifrado del dispositivo (Android Keystore / EncryptedSharedPreferences) para guardar el token de sesión localmente.</p>
+        <p><strong>Portal web:</strong> puede usar cookies de sesión estrictamente necesarias para mantener tu sesión iniciada. No usamos cookies de publicidad ni de rastreo de terceros.</p>
+      </div>
+
+      <!-- 10 -->
+      <div class="privacy-section" id="cambios">
+        <h2><span class="sec-num">10</span> Cambios a esta política</h2>
+        <p>Podemos actualizar esta Política de Privacidad periódicamente. Cuando lo hagamos, actualizaremos la fecha de "última actualización" al inicio de este documento.</p>
+        <p>Para cambios significativos, te notificaremos a través de la app o por correo electrónico con al menos 10 días de anticipación antes de que entren en vigor.</p>
+        <p>El uso continuado del servicio después de la fecha de vigencia implica la aceptación de los cambios.</p>
+      </div>
+
+      <!-- 11 -->
+      <div class="privacy-section" id="contacto">
+        <h2><span class="sec-num">11</span> Contacto</h2>
+        <p>Para cualquier pregunta, solicitud ARCO o reporte de incidente de privacidad, contáctanos:</p>
+        <div class="contact-card">
+          <a href="mailto:hello@iados.mx">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            hello@iados.mx — Privacidad de datos
+          </a>
+          <a href="https://wa.me/5281141​37902" target="_blank" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            +52 81 1413 7902
+          </a>
+          <span style="font-size:.82rem;color:var(--grey-500)">Tiempo de respuesta estimado: 2 días hábiles</span>
+        </div>
+      </div>
+
+    </article>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">
+        <img src="images/logo_app.png" alt="Acceso Digital" width="40" height="40"/>
+        <div>
+          <strong>Acceso Digital</strong>
+          <span>by iaDoS</span>
+        </div>
+      </a>
+      <p>Sistema integral de control de accesos con tecnología en la nube. Innovación y seguridad para tu tranquilidad.</p>
+      <a href="https://accesodigitalapp.iados.mx/login" target="_blank" rel="noopener" class="footer-admin-btn">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Portal Administrador
+      </a>
+    </div>
+    <div class="footer-col">
+      <h5>Soluciones</h5>
+      <a href="/#soluciones">Control Vehicular</a>
+      <a href="/#soluciones">Control Peatonal</a>
+      <a href="/#soluciones">Gestión de Visitas</a>
+      <a href="/#soluciones">CCTV Integrado</a>
+      <a href="/#soluciones">Reportes &amp; Analytics</a>
+    </div>
+    <div class="footer-col">
+      <h5>Empresa</h5>
+      <a href="/#ahorro">Ahorro &amp; ROI</a>
+      <a href="/#ventajas">Ventajas</a>
+      <a href="/#caracteristicas">App Móvil</a>
+      <a href="https://iados.mx" target="_blank" rel="noopener">Sobre iaDoS</a>
+      <a href="/#contacto">Soporte 24/7</a>
+    </div>
+    <div class="footer-col">
+      <h5>Legal</h5>
+      <a href="/privacidad.html">Política de Privacidad</a>
+      <h5 style="margin-top:12px">Contacto</h5>
+      <a href="https://wa.me/5281141​37902" target="_blank" rel="noopener">+52 81 1413 7902</a>
+      <a href="https://wa.me/52831898​9580" target="_blank" rel="noopener">+52 83 1898 9580</a>
+      <a href="mailto:hello@iados.mx">hello@iados.mx</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>© 2026 Acceso Digital. Todos los derechos reservados.</span>
+      <span>Desarrollado por <a href="https://iados.mx" target="_blank" rel="noopener">iados.mx</a> &nbsp;·&nbsp; <a href="/privacidad.html">Privacidad</a></span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5281141​37902" target="_blank" rel="noopener" class="wa-fab" aria-label="WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
